@@ -1,6 +1,5 @@
 body{
-  font-family: 'Poppins', sans-serif;
-  overflow-x: hidden!important;/*QUITA LA BARRA DE SCROLL EN EL EJE X BARRA  VERTICAL*/
+  overflow-x: hidden!important;/*QUITA LA BARRA DE SCROLL EN EL EJE X BARRA  VERTICAL efecto PARALLX*/
 }
 #container{
   position: relative!important;
@@ -550,6 +549,96 @@ body{
 }
 
 
+/**************** MENU ***************/
+p.menuTexto{
+  margin: 0;
+  padding: 0;
+  color: #950000;
+  font-size: 20px;
+  font-weight: bold;
+}
+img.imgLogoMenu{
+  width: 200px;
+}
+
+hr.linea1, hr.linea3{
+  position: absolute;
+	transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
+	transform-origin : 0px 100%;
+  width: 20px;
+  border: 1px solid #950000;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
+	/* transform-origin : 0px 100%; */
+}
+hr.linea2{
+  width: 30px;
+  border: 1px solid #950000;
+  margin: 10px 0;
+  transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
+	/* transform-origin : 0px 100%; */
+}
+div.menuHamburguesa{
+  cursor: pointer;
+}
+
+/* animacion */
+.visible_menu hr.linea1{
+  transform: rotate(45deg) translate(0px,1px); 
+  width: 30px;
+  border: 1.5px solid #950000;
+}
+ 
+.visible_menu hr.linea2{
+  opacity: 0;
+}
+ 
+.visible_menu hr.linea3{
+  transform: rotate(-45deg) translate(-1px,1px); 
+  width: 30px;
+  border: 1.5px solid #950000;
+}
+/* quitar el scroll del body cuando se pone el menu desplegado */
+.visible_menu{
+  overflow: hidden!important;
+}
+/**************** esconder/aparecer menu *********************/
+.slideUp {
+  -webkit-transform: translateY(-100px);
+  transform: translateY(-100px);
+  transition: transform .5s ease-out;
+}
+
+.slideDown {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: transform .5s ease-out;
+}
+
+/* fin menu */
+
+/*********************** menu desplegado ********************/
+div.menuDesplegado{
+  position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -400px; /* Escondemos nuestro menú con un valor negativo */ 
+	width: 100%;
+	z-index: 1;
+	padding: 90px 30px 30px;
+	background: white;
+	opacity: 0;
+	transition: all 0.75s ease;
+  font-size: 1.2em;
+  overflow-y: auto;
+}
+.visible_menu div.menuDesplegado{
+  left: 0;
+  opacity: 1;
+}
+/*********************** fin menu desplegado ********************/
+
 
 /************************************************/
 /*********         MEDIA QUERYS        **********/
@@ -684,6 +773,7 @@ body{
     left: -14%;
   }
 }
+
 
 /* MEDIA QUERY MAX-WIDTH 992PX LANDSCAPE*/
 @media (max-width: 1200px) and (orientation: landscape){
