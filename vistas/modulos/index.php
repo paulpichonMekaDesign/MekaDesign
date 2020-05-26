@@ -14,10 +14,106 @@ $url = Rutas::rutasArchivosMdl();
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<!-- BOOTSTRAP 4-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- FontAwesone -->
+	<link rel="stylesheet" href="vistas/plugins/fontawesome-free/css/all.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+	<!-- GoogleFonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 	<!-- ESTILOS PROPIOS -->
 	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/estilos.css"/>
+
 </head>
 <body>
+
+	<!-- Menu hamburguesa -->
+	<div id="header" class="contenedorMenu fixed-top">
+		<div class="container-fluid">
+			<header class="menu d-flex justify-content-between">
+				<div class="logoMekaDesign">
+					<a href="#"><img class="imgLogoMenu" src="vistas/imagenes/1.png" alt="MekaDesign Logo"></a>
+				</div>
+				<div id="menu_on" class="menuHamburguesa d-flex align-items-center">
+					<p class="menuTexto mr-3">Menú</p>
+					<div class="lineasMenuHamburguesa">
+						<hr class="linea1">
+						<hr class="linea2">
+						<hr class="linea3">
+					</div>
+				</div>
+			</header>
+		</div>
+	</div>
+	<!-- Menu hamburguesa -->
+
+	<!-- Menu dezplegado -->
+	<div class="contenedorMenuDesplegado">
+		<section class="bodyContenedor">
+			<nav class="menuDesplegado">
+				<div class="menu__item">
+					<a href="https://developer.mozilla.org/es/docs/Web/CSS/justify-content" class="menu__item-link">Inicio</a>
+					<img class="menu__item-img" src="vistas/imagenes/imgMenu/1.png" alt="MekaDesign logo principal"/>
+					<div class="marquee">
+						<div class="marquee__inner" aria-hidden="true">
+							<span>Inicio</span>
+							<span>Inicio</span>
+							<span>Inicio</span>
+							<span>Inicio</span>
+						</div>
+					</div>
+				</div>
+				<div class="menu__item">
+					<a href="" class="menu__item-link">Nosotros</a>
+					<img class="menu__item-img" src="vistas/imagenes/imgMenu/nosotros.jpg" alt="Imagen nosotros MekaDesign"/>
+					<div class="marquee">
+						<div class="marquee__inner" aria-hidden="true">
+							<span>Nosotros</span>
+							<span>Nosotros</span>
+							<span>Nosotros</span>
+							<span>Nosotros</span>
+						</div>
+					</div>
+				</div>
+				<div class="menu__item">
+					<a href="#" class="menu__item-link">Trabajos</a>
+					<img class="menu__item-img" src="vistas/imagenes/imgMenu/trabajos.jpg" alt="Imagem trabajos MekaDesign"/>
+					<div class="marquee">
+						<div class="marquee__inner" aria-hidden="true">
+							<span>Trabajos</span>
+							<span>Trabajos</span>
+							<span>Trabajos</span>
+							<span>Trabajos</span>
+						</div>
+					</div>
+				</div>
+				<div class="menu__item">
+					<a href="#" class="menu__item-link">Contacto</a>
+					<img class="menu__item-img" src="vistas/imagenes/imgMenu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
+					<div class="marquee">
+						<div class="marquee__inner" aria-hidden="true">
+							<span>Contacto</span>
+							<span>Contacto</span>
+							<span>Contacto</span>
+							<span>Contacto</span>
+						</div>
+					</div>
+				</div>
+			</nav>
+			
+			<div class="footerMenu mb-5">
+				<div class="container-fluid">
+					<div class="row d-flex justify-content-end">
+						<div class="col-xl-2 col-lg-2 text-center">
+							<a href="#"><img class="imgFooterMenu" src="vistas/imagenes/1.png" alt="Imagen MekaDesign Logo"></a>
+						</div>
+						<div class="col-xl-3 col-lg-3 text-center">
+							<a class="redesSociales facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+							<a class="redesSociales LinkedIn" href="#"><i class="fab fa-linkedin-in"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 
 	<div id="container" class="wrapper">
 		<ul id="scene" class="scene"	data-friction-x="0.1"	data-friction-y="0.1"	data-scalar-x="25" data-scalar-y="15">
@@ -62,34 +158,313 @@ $url = Rutas::rutasArchivosMdl();
 		</ul>
 
 	</div>
-	
-	<!-- Menu hamburguesa -->
-	<div id="header" class="contenedorMenu fixed-top">
+
+	<!-- PARRAFO -->
+	<section class="parrafoFrase">
+		<div class="container-fluid text-center">
+			<div class="contenedorFraseLink mt-5 mb-5">
+				<p class="frase">We are the new school. A nimble team helping to grow ambitious businesses in a new age. An independent, multi-award winning creative agency, we create work that actually works - without the bullshit. Our creativity gets brands noticed, our strategy gets results.</p>
+
+				<a class="sobreNosotrosTexto" href=#>Sobre Nosotros</a>
+				<hr class="lineaBajoLink">
+			</div>
+		</div>
+	</section>
+
+	<!-- Servicios -->	
+	<section class="servicios pt-4" style="background-color: black;">
 		<div class="container-fluid">
-			<header class="menu d-flex justify-content-between">
-				<div class="logoMekaDesign">
-					<img class="imgLogoMenu" src="vistas/imagenes/1.png" alt="MekaDesign Logo">
-				</div>
-				<div id="menu_on" class="menuHamburguesa d-flex align-items-center">
-					<p class="menuTexto mr-3">Menú</p>
-					<div class="lineasMenuHamburguesa">
-						<hr class="linea1">
-						<hr class="linea2">
-						<hr class="linea3">
+			<div class="demo-3">
+				<h1 class="tituloServicios text-center mt-5 mb-5">Servicios</h1>
+				<div class="row">
+					<div class="col-xl-6 col-md-6">
+						<a href="">
+							<div class="grid__item">
+								<div class="glitch glitch--style-1">
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+								</div>
+								<h2 class="grid__item-title">Sitios Web<span>Ver más</span></h2>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-md-6">
+						<a href="">
+							<div class="grid__item">
+								<div class="glitch glitch--style-2">
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+								</div>
+								<h2 class="grid__item-title">Sistemas Web<span>Ver más</span></h2>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-md-6">
+						<a href="">
+							<div class="grid__item">
+								<div class="glitch glitch--vertical glitch--style-3">
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+								</div>
+								<h2 class="grid__item-title">Aplicaciones Móviles<span>Ver más</span></h2>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-md-6">
+						<a href="">
+							<div class="grid__item">
+								<div class="glitch glitch--style-4">
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+								</div>
+								<h2 class="grid__item-title">PWA (Progressive Web App) <span>Ver más</span></h2>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-md-6">
+						<a href="">
+							<div class="grid__item">
+								<div class="glitch glitch--style-5">
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+								</div>
+								<h2 class="grid__item-title">Ecommerce<span>Ver más</span></h2>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-md-6">
+						<a href="">
+							<div class="grid__item">
+								<div class="glitch glitch--style-6">
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+								</div>
+								<h2 class="grid__item-title">Diseño Web <span>Ver más</span></h2>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-md-6">
+						<a href="">
+							<div class="grid__item">
+								<div class="glitch glitch--style-6">
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+								</div>
+								<h2 class="grid__item-title">Diseño Gráfico <span>Ver más</span></h2>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-md-6">
+						<a href="">
+							<div class="grid__item">
+								<div class="glitch glitch--style-6">
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+								</div>
+								<h2 class="grid__item-title">Administración de Redes Sociales <span>Ver más</span></h2>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-md-6">
+						<a href="">
+							<div class="grid__item">
+								<div class="glitch glitch--style-6">
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+								</div>
+								<h2 class="grid__item-title">Diseño de Logotipo<span>Ver más</span></h2>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-md-6">
+						<a href="">
+							<div class="grid__item">
+								<div class="glitch glitch--style-6">
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+								</div>
+								<h2 class="grid__item-title">Presentación Dinámica<span>Ver más</span></h2>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-md-6">
+						<a href="">
+							<div class="grid__item">
+								<div class="glitch glitch--style-6">
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+								</div>
+								<h2 class="grid__item-title">Diseño de Tarjetas de Presentación<span>Ver más</span></h2>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-6 col-md-6">
+						<a href="">
+							<div class="grid__item">
+								<div class="glitch glitch--style-6">
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+								</div>
+								<h2 class="grid__item-title">Presentación de Power Point<span>Ver más</span></h2>
+							</div>
+						</a>
 					</div>
 				</div>
-			</header>
+			</div>
 		</div>
-	</div>
-	<!-- Menu hamburguesa -->
+	</section>
 
-	<!-- Menu dezplegado -->
-	<div class="menuDesplegado">
-		<h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptas tempora animi excepturi laboriosam! A unde provident dignissimos quae voluptates saepe, beatae quibusdam nesciunt deserunt nihil velit error placeat molestiae.</h1>
-		<h1>nosotros</h1>
-		<h1>contacto</h1>
-		<h1>servicios</h1>
-	</div>
+	<!-- Marcas -->
+	<section class="marcas mt-5 mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/impulso.jpg" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/inamiki.png" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/logo.png" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/propeninsular.png" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/impulso.jpg" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/inamiki.png" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/logo.png" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/propeninsular.png" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/impulso.jpg" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/inamiki.png" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/logo.png" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/propeninsular.png" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/impulso.jpg" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/inamiki.png" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/logo.png" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/propeninsular.png" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/impulso.jpg" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/inamiki.png" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/logo.png" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/propeninsular.png" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/impulso.jpg" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/inamiki.png" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/logo.png" alt="">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/propeninsular.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container-fluid">
+			<div class="row d-flex align-items-center">
+				<div class="col-xl-4 col-lg-4 col-md-4 text-center">
+					<ul class="menuFooter d-flex">
+						<li><a class="opcionMenu" href="">Nosotros</a></li>	
+						<li><a class="opcionMenu" href="">Trabajos</a></li>	
+						<li><a class="opcionMenu" href="">Contacto</a></li>	
+					</ul>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-4 text-center">
+					<a href=""><img class="logoPrincipalFooter" src="vistas/imagenes/1.png" alt=""></a>
+				</div>
+				<div class="contenedorRedesSociales col-xl-4 col-lg-4 col-md-4 text-right">
+					<a class="redesSocialesFooter facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+					<a class="redesSocialesFooter linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+			</div>
+
+			<hr class="lineaFooter">
+
+			<div class="row d-flex justify-content-end">
+				<div class="col-xl-4 col-lg-4 col-md-4 text-center">
+					<p class="mekaDesign">© 2020 MekaDesign</p>
+				</div>
+				<div class="contenedorPoliticasTerminos col-xl-4 col-lg-4 col-md-4 text-right">
+					<a class="privacidadPoliticas mr-3" href="">Políticas de privacidad</a>
+					<a class="privacidadPoliticas" href="">Términos y Condiciones</a>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	
+	
 	
 	<!-- BOOTSTRAP V.4-->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
