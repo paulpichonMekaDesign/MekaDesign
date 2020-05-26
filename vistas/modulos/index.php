@@ -172,14 +172,14 @@ $url = Rutas::rutasArchivosMdl();
 	</section>
 
 	<!-- Servicios -->	
-	<section class="servicios pt-4" style="background-color: black;">
+	<section class="servicios pt-4 pb-5" style="background-color: black;">
 		<div class="container-fluid">
 			<div class="demo-3">
 				<h1 class="tituloServicios text-center mt-5 mb-5">Servicios</h1>
 				<div class="row">
 					<div class="col-xl-6 col-md-6">
-						<a href="">
-							<div class="grid__item">
+						<a href="#">
+							<div class="grid__item" >
 								<div class="glitch glitch--style-1">
 									<div class="glitch__img"></div>
 									<div class="glitch__img"></div>
@@ -351,7 +351,7 @@ $url = Rutas::rutasArchivosMdl();
 	</section>
 
 	<!-- Marcas -->
-	<section class="marcas mt-5 mb-5">
+	<section class="marcas mt-5 mb-5 pt-5">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
