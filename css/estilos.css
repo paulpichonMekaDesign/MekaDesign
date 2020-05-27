@@ -1501,8 +1501,7 @@ div.grid__item{
 
 /*********** seccion marcas ***************/
 img.imgSeccionMarcas{
-  width: 100%;
-  height: 100px;
+  width: 50%;
 }
 
 /* FIN SECTION marcas */
@@ -1701,6 +1700,10 @@ a.privacidadPoliticas{
   /* frase despues del menu */
   p.frase{
     font-size: 1.7rem;
+  }
+  /* IMAGEN MARCAS */
+  img.imgSeccionMarcas{
+    width: 100%;
   }
 }
 

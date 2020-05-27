@@ -1,0 +1,742 @@
+
+
+/**************** MENU ***************/
+p.menuTexto{
+     margin: 0;
+     padding: 0;
+     color: #950000;
+     font-size: 20px;
+     font-weight: bold;
+   }
+   img.imgLogoMenu{
+     width: 200px;
+   }
+   
+   hr.linea1, hr.linea3{
+     position: absolute;
+        transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
+        transform-origin : 0px 100%;
+     width: 20px;
+     border: 1px solid #950000;
+     margin-top: 0;
+     margin-bottom: 0;
+     transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
+        /* transform-origin : 0px 100%; */
+   }
+   hr.linea2{
+     width: 30px;
+     border: 1px solid #950000;
+     margin: 10px 0;
+     transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
+        /* transform-origin : 0px 100%; */
+   }
+   div.menuHamburguesa{
+     cursor: pointer;
+   }
+   
+   /* animacion */
+   .visible_menu hr.linea1{
+     transform: rotate(45deg) translate(0px,1px); 
+     width: 30px;
+     border: 1.5px solid #950000;
+   }
+    
+   .visible_menu hr.linea2{
+     opacity: 0;
+   }
+    
+   .visible_menu hr.linea3{
+     transform: rotate(-45deg) translate(-1px,1px); 
+     width: 30px;
+     border: 1.5px solid #950000;
+   }
+   /* quitar el scroll del body cuando se pone el menu desplegado */
+   .visible_menu{
+     overflow: hidden!important;
+   }
+   /**************** esconder/aparecer menu *********************/
+   .slideUp {
+     -webkit-transform: translateY(-100px);
+     transform: translateY(-100px);
+     transition: transform .5s ease-out;
+   }
+   
+   .slideDown {
+     -webkit-transform: translateY(0);
+     transform: translateY(0);
+     transition: transform .5s ease-out;
+   }
+   
+   /* fin menu */
+   
+   /*********************** menu desplegado ********************/
+   div.contenedorMenuDesplegado{
+     position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -100%; /* Escondemos nuestro menú con un valor negativo */ 
+     width: 100%;
+        z-index: 1;
+        opacity: 0;
+        transition: all 0.75s ease;
+     font-size: 1.2em;
+     overflow-x: hidden;
+     --color-bg: #f8ecde;
+        background-color: var(--color-bg);
+   }
+   .visible_menu div.contenedorMenuDesplegado{
+     left: 0;
+     opacity: 1;
+   }
+   
+   section.bodyContenedor {
+        --color-text: #111;
+        --color-link: #b19e7f;
+        --color-link-hover: #000;
+        color: var(--color-text);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: sofia-pro, sans-serif;
+   }
+   @keyframes grain {
+     0%, 100% { transform:translate(0, 0); }
+     10% { transform:translate(-5%, -10%); }
+     20% { transform:translate(-15%, 5%); }
+     30% { transform:translate(7%, -25%); }
+     40% { transform:translate(-5%, 25%); }
+     50% { transform:translate(-15%, 10%); }
+     60% { transform:translate(15%, 0%); }
+     70% { transform:translate(0%, 15%); }
+     80% { transform:translate(3%, 35%); }
+     90% { transform:translate(-10%, 10%); }
+   }
+   .menuDesplegado {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 10vh 0 25vh;
+        --marquee-width: 100vw;
+        --offset: 20vw;
+        --move-initial: calc(-25% + var(--offset));
+        --move-final: calc(-50% + var(--offset));
+        --item-font-size: 10vw;
+        counter-reset: menu;
+   }
+   
+   .menu__item {
+        cursor: default;
+        position: relative;
+        padding: 0 5vw;
+   }
+   
+   .menu__item-link {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        -webkit-text-stroke: 1.5px #950000;
+        text-stroke: 1.5px #950000;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+        color: transparent;
+        transition: opacity 0.4s;
+   }
+   
+   .menu__item-link::before {
+        all: initial;
+        font-family: sofia-pro, sans-serif;
+        counter-increment: menu;
+        content:  counter(menu);
+        position: absolute;
+        bottom: 60%;
+        left: 0;
+        pointer-events: none;
+   }
+   
+   .menu__item-link:hover {
+        transition-duration: 0.1s;
+        opacity: 0;
+   }
+   
+   .menu__item-img {
+        pointer-events: none;
+        position: absolute;
+        height: 50vh;
+        max-height: 400px;
+        opacity: 0;
+        left: 100%;
+        top: 50%;
+        transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+   }
+   
+   .menu__item-link:hover + .menu__item-img {
+        opacity: 1;
+        transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+        transition: all 0.4s;
+   }
+   
+   /* Make sure 3 items are visible in the viewport by setting suitable font size. */
+   
+   .marquee {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: var(--marquee-width);
+        overflow: hidden;
+        pointer-events: none;
+        mix-blend-mode: color-burn;
+   }
+   
+   .marquee__inner {
+        width: fit-content;
+        display: flex;
+        position: relative;
+        transform: translate3d(var(--move-initial), 0, 0);
+        animation: marquee 5s linear infinite;
+        animation-play-state: paused;
+        opacity: 0;
+        transition: opacity 0.1s;
+   }
+   
+   .menu__item-link:hover ~ .marquee .marquee__inner {
+        animation-play-state: running;
+        opacity: 1;
+        transition-duration: 0.4s;
+   }
+   
+   .marquee span {
+        text-align: center;
+   }
+   
+   .menu__item-link,
+   .marquee span {
+        white-space: nowrap;
+        font-size: var(--item-font-size);
+        padding: 0 1vw;
+        font-weight: 900;
+        line-height: 1.15;
+   }
+   
+   .marquee span {
+     font-style: italic;
+     
+   }
+   
+   @keyframes marquee {
+        0% {
+             transform: translate3d(var(--move-initial), 0, 0);
+        }
+   
+        100% {
+             transform: translate3d(var(--move-final), 0, 0);
+        }
+   }
+   /* Fin efecto en el menu */
+   /* redes sociales */
+   a.redesSociales{
+     font-size: 2rem;
+     color: #950000;
+     margin: 0px 20px;
+     padding: 10px;
+     transition: ease-in-out .5s;
+   }
+   a.redesSociales:hover:nth-child(1){
+     color: white;
+     background-color: #3b5998;
+   }
+   a.redesSociales:hover:nth-child(2){
+     color: white;
+     background-color: #2867B2;
+   }
+   
+   img.imgFooterMenu{
+     width: 150px;
+   }
+   
+   /*********************** fin menu desplegado ********************/
+   /* Fin menu en general */
+
+   div.divMenu{
+        background-color: black;
+        height: 80px;
+        width: 100%;
+   }
+   /**************titulo sobre nosotros *******************/
+   div.contenedorSobreNosotros{
+        height: 200px;
+   }
+   div.contenedorSobreNosotros h1{
+     font-size: 70px;
+     color: #950000;
+     font-family: 'Open Sans', sans-serif;
+     font-weight: bold;
+     margin-left: 100px;
+}
+/*************** BANNER ****************/
+div.bannerImg{
+     background-image: url(../imagenes/nosotros/imagen1.jpg);
+     height: 738px;
+     width: 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+/*************** HISTORIA mekadesign */
+div.contenedorHistoriaMeka{
+     background-color: black;
+}
+p.mekaHistoria{
+     color: white;
+     font-size: 30px;
+     text-align: center;
+     padding: 70px 40px;
+     line-height: 2;
+     font-weight: 400;
+     font-style: italic;
+}
+
+
+/*********************** LISTA SERVICIOS********************/
+div.listaServiciosNosotros{
+     overflow: hidden;
+}
+.menuItem {
+	cursor: default;
+	position: relative;
+	padding: 0 5vw;
+}
+nav.listaServicios {
+     -webkit-touch-callout: none;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     padding: 10vh 0 25vh;
+     --marquee-width: 100vw;
+     --offset: 20vw;
+     --move-initial: calc(-25% + var(--offset));
+     --move-final: calc(-50% + var(--offset));
+     --item-font-size: 10vw;
+     counter-reset: menu;
+}
+.menuItem-link {
+	display: inline-block;
+	position: relative;
+	-webkit-text-stroke: 1.5px #950000;
+	text-stroke: 1.5px #950000;
+	-webkit-text-fill-color: transparent;
+     text-fill-color: transparent;
+     font-size: 3rem!important;/***************añadido*******************/
+	color: transparent;
+     transition: opacity 0.4s;
+}
+
+.menuItem-link::before {
+	all: initial;
+	font-family: sofia-pro, sans-serif;
+	counter-increment: menu;
+	content:  counter(menu);
+	position: absolute;
+	bottom: 60%;
+	left: 0;
+	pointer-events: none;
+}
+
+.menuItem-link:hover {
+	transition-duration: 0.1s;
+	opacity: 0;
+}
+
+.menuItem-img {
+	pointer-events: none;
+	position: absolute;
+	height: 30vh;
+	max-height: 300px;
+	opacity: 0;
+	left: 100%;
+	top: 50%;
+	transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+}
+
+.menuItem-link:hover + .menuItem-img {
+	opacity: 1;
+	transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+	transition: all 0.4s;
+}
+
+/* Make sure 3 items are visible in the viewport by setting suitable font size. */
+
+.marqueeServicios {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--marquee-width);
+	overflow: hidden;
+	pointer-events: none;
+	mix-blend-mode: color-burn;
+}
+
+.marqueeInner {
+	width: fit-content;
+	display: flex;
+	position: relative;
+	transform: translate3d(var(--move-initial), 0, 0);
+	animation: marqueeServicios 5s linear infinite;
+	animation-play-state: paused;
+	opacity: 0;
+	transition: opacity 0.1s;
+}
+
+.menuItem-link:hover ~ .marqueeServicios .marqueeInner {
+	animation-play-state: running;
+	opacity: 1;
+	transition-duration: 0.4s;
+}
+
+.marqueeServicios span {
+     text-align: center;
+     font-size: 5rem!important;
+}
+
+.menuItem-link,
+.marqueeServicios span {
+	white-space: nowrap;
+	font-size: var(--item-font-size);
+	padding: 0 1vw;
+	font-weight: 200;
+	line-height: 1.15;
+}
+
+.marqueeServicios span {
+  font-style: italic;
+  
+}
+
+@keyframes marqueeServicios {
+	0% {
+		transform: translate3d(var(--move-initial), 0, 0);
+	}
+
+	100% {
+		transform: translate3d(var(--move-final), 0, 0);
+	}
+}
+/* Fin efecto en el menu */
+/* redes sociales */
+a.redesSociales{
+  font-size: 2rem;
+  color: #950000;
+  margin: 0px 20px;
+  padding: 10px;
+  transition: ease-in-out .5s;
+}
+a.redesSociales:hover:nth-child(1){
+  color: white;
+  background-color: #3b5998;
+}
+a.redesSociales:hover:nth-child(2){
+  color: white;
+  background-color: #2867B2;
+}
+
+img.imgFooterMenu{
+  width: 150px;
+}
+
+/*********************** FIN LISTA DE SERVICIOS ********************/
+
+/********* FILOSOFIA **********/
+h1.filosofiaTitulo{
+     color: #950000;
+     font-family: 'Open Sans', sans-serif;
+     font-weight: lighter;
+     font-style: italic;
+     font-size: 3.5rem;
+}
+p.parrafoFilosofia{
+     font-family: 'Open Sans', sans-serif;
+     font-weight: bold;
+     font-size: 30px;
+     text-align: center;
+     padding: 70px 40px;
+     line-height: 2;
+     font-weight: 400;
+     font-style: italic;
+}
+/* SEGUNDO BANNER */
+div.segundoBanner{
+     background-image: url(../imagenes/nosotros/filosofia.jpg);
+     width: 100%;
+     height: 700px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+/******* LO QUE HACEMOS **********/
+div.contacto{
+     transition: all .6s ease-in-out;
+}
+div.contenedorLoQueHacemos{
+     padding: 70px 0;
+}
+h6.tituloH6{
+     color: #950000;
+     font-family: 'Open Sans', sans-serif;
+     font-weight: bold;
+     font-size: 20px;
+     margin-bottom: 40px;
+}
+p.parrafoLoqueHacemos, li.lista{
+     font-family: 'Open Sans', sans-serif;
+     font-size: 18px;
+     font-weight: lighter;
+     line-height: 2;
+}
+a.linkTrabajos{
+     font-family: 'Open Sans', sans-serif;
+     color: black;
+     font-size: 20px;
+     transition: .5s ease-in-out;
+     text-decoration: none;
+}
+a.linkTrabajos:hover{
+     color: #950000;
+}
+ul.ulListaServicios{
+     margin: 0;
+     padding: 0;
+     list-style: none;
+}
+/* CONTACTO */
+div.contacto{
+     background-color: black;
+     height: 300px;
+}
+h2.h2Contacto{
+     font-family: 'Open Sans', sans-serif;
+     font-size: 30px;
+     color: white;
+     font-weight: bold;
+}
+p.parrafoTextosLink{
+     font-size: 18px;
+     font-weight: lighter;
+     font-family: 'Open Sans', sans-serif;
+     color: white;
+     margin: 20px 0 40px 0;
+}
+a.linnkContacto{
+     text-decoration: none;
+     transition: all .6s ease-in-out;
+     color: white;
+     font-weight: lighter;
+}
+a.linnkContacto:hover{
+     color: #950000;
+}
+
+
+
+
+/******** estilos footer *************/
+footer.footer{
+     background-color: black;
+     padding-bottom: 30px;
+   
+   }
+   ul.menuFooter{
+     margin: 0;
+     padding: 0;
+     list-style: none;
+   }
+   ul.menuFooter li{
+     margin-right: 20px;
+   }
+   ul.menuFooter li:last-child{
+     margin-right: 0px;
+   }
+   ul.menuFooter a.opcionMenu{
+     font-size: 20px;
+     transition: ease-in-out .5s all;
+     color: #950000;
+     text-decoration: none;
+   }
+   ul.menuFooter a.opcionMenu:hover{
+     color: white;
+   }
+   img.logoPrincipalFooter{
+     width: 307px;
+   }
+   a.redesSocialesFooter{
+     color:  #950000;
+     font-size: 20px;
+     margin-right: 20px;
+     transition: all .4s ease-in-out;
+   }
+   a.redesSocialesFooter:last-child{
+     margin-right: 0px;
+   }
+   a.redesSocialesFooter:hover{
+     color:  white;
+   }
+   hr.lineaFooter{
+     border: .5px solid #950000;
+   }
+   p.mekaDesign{
+     color: white;
+     font-size: 12px;
+     margin-bottom: 0;
+   }
+   a.privacidadPoliticas{
+     color: white;
+     font-size: 12px;
+     margin-bottom: 0;
+   }
+   
+   /******** fin estilos footer *************/
+
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+
+     /*************** BANNER ****************/
+     div.bannerImg{
+          height: 500px;
+     }
+     /******** HISTORIA MEKADESIGN ***********/
+     p.mekaHistoria{
+          font-size: 20px;
+          padding: 70px 40px;
+     }
+     /* LISTA DE SERVICIOS */
+     .menuItem-link {
+          font-size: 2rem!important;
+     }
+     .marqueeServicios span {
+          font-size: 3rem!important;
+     }
+     /* FILOSOFIA */
+     h1.filosofiaTitulo{
+          font-size: 2.5rem;
+     }
+     p.parrafoFilosofia{
+          font-size: 25px;
+          padding: 50px 40px;
+     }
+     /* SEGUNDO BANNER */
+     div.segundoBanner{
+          height: 500px;
+     }
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+     /* Titulo sobre nosotros */
+     div.contenedorSobreNosotros h1{
+          font-size: 3rem;
+          margin-left: 0;
+     }
+     
+     
+     /* IMAGEN LOGO PRINCIPAL FOOTER */
+     img.logoPrincipalFooter{
+          width: 207px;
+     }
+     /* LO QUE HACEMOS */
+     h6.tituloH6{
+          font-size: 15px;
+          margin-bottom: 20px;
+     }
+     p.parrafoLoqueHacemos, li.lista{
+          font-size: 14px;
+          line-height: 2;
+     }
+     a.linkTrabajos{
+          font-size: 15px;
+     }
+     
+
+ }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+     /* LISTA DE SERVICIOS */
+     .menuItem-img {
+          height: 17vh;
+     }
+     nav.listaServicios {
+          padding: 10vh 0 13vh;
+     }
+     /********* FOOTER *************/
+     ul.menuFooter {
+          margin-top: 20px;
+          justify-content: center;
+     }
+     div.contenedorRedesSociales{
+          display: flex;
+          justify-content: center;
+     }
+     div.contenedorPoliticasTerminos{
+          text-align: center!important;
+     }
+     /******* HISTORIA MEKADESIGN **********/
+     p.mekaHistoria{
+          font-size: 18px;
+          line-height: 1.5;
+     }
+     /* FILOSOFIA */
+     h1.filosofiaTitulo{
+          font-size: 2rem;
+     }
+     p.parrafoFilosofia{
+          font-size: 18px;
+     }
+    
+ }
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+     /* Titulo sobre nosotros */
+     div.contenedorSobreNosotros h1{
+          font-size: 2rem;
+          text-align: center;
+     }
+     /* LISTA DE SERVICIOS */
+     .menuItem-link {
+          font-size: 1rem!important;
+     }
+     .marqueeServicios span {
+          font-size: 1.3rem!important;
+     }
+     /******* HISTORIA MEKADESIGN **********/
+     p.mekaHistoria{
+          font-size: 1rem;
+          padding: 50px 0;
+     }
+     /* FILOSOFIA */
+     h1.filosofiaTitulo{
+          font-size: 1.7rem;
+     }
+     p.parrafoFilosofia{
+          font-size: 1rem;
+          padding: 20px 0;
+     }
+     /* SEGUNDO BANNER */
+     div.segundoBanner{
+          height: 300px;
+     }
+     /* CONTACTO */
+     h2.h2Contacto{
+          font-size: 25px;
+     }
+     p.parrafoTextosLink{
+          font-size: 13px;
+     }
+     a.linnkContacto{
+          font-size: 1.2rem;
+     }
+ }

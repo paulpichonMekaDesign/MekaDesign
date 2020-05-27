@@ -1,8 +1,3 @@
-<?php
-
-$url = Rutas::rutasArchivosMdl();
-
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,12 +10,12 @@ $url = Rutas::rutasArchivosMdl();
 	<!-- BOOTSTRAP 4-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- FontAwesone -->
-	<link rel="stylesheet" href="vistas/plugins/fontawesome-free/css/all.min.css">
+	<link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
 	<!-- GoogleFonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
 	<!-- ESTILOS PROPIOS -->
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/estilos.css"/>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
 
 </head>
 <body>
@@ -30,7 +25,7 @@ $url = Rutas::rutasArchivosMdl();
 		<div class="container-fluid">
 			<header class="menu d-flex justify-content-between">
 				<div class="logoMekaDesign">
-					<a href="#"><img class="imgLogoMenu" src="vistas/imagenes/1.png" alt="MekaDesign Logo"></a>
+					<a href="#"><img class="imgLogoMenu" src="imagenes/1.png" alt="MekaDesign Logo"></a>
 				</div>
 				<div id="menu_on" class="menuHamburguesa d-flex align-items-center">
 					<p class="menuTexto mr-3">Menú</p>
@@ -50,8 +45,8 @@ $url = Rutas::rutasArchivosMdl();
 		<section class="bodyContenedor">
 			<nav class="menuDesplegado">
 				<div class="menu__item">
-					<a href="https://developer.mozilla.org/es/docs/Web/CSS/justify-content" class="menu__item-link">Inicio</a>
-					<img class="menu__item-img" src="vistas/imagenes/imgMenu/1.png" alt="MekaDesign logo principal"/>
+					<a href="#" class="menu__item-link">Inicio</a>
+					<img class="menu__item-img" src="imagenes/imgMenu/1.png" alt="MekaDesign logo principal"/>
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>Inicio</span>
@@ -63,7 +58,7 @@ $url = Rutas::rutasArchivosMdl();
 				</div>
 				<div class="menu__item">
 					<a href="" class="menu__item-link">Nosotros</a>
-					<img class="menu__item-img" src="vistas/imagenes/imgMenu/nosotros.jpg" alt="Imagen nosotros MekaDesign"/>
+					<img class="menu__item-img" src="imagenes/imgMenu/nosotros.jpg" alt="Imagen nosotros MekaDesign"/>
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>Nosotros</span>
@@ -75,7 +70,7 @@ $url = Rutas::rutasArchivosMdl();
 				</div>
 				<div class="menu__item">
 					<a href="#" class="menu__item-link">Trabajos</a>
-					<img class="menu__item-img" src="vistas/imagenes/imgMenu/trabajos.jpg" alt="Imagem trabajos MekaDesign"/>
+					<img class="menu__item-img" src="imagenes/imgMenu/trabajos.jpg" alt="Imagem trabajos MekaDesign"/>
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>Trabajos</span>
@@ -87,7 +82,7 @@ $url = Rutas::rutasArchivosMdl();
 				</div>
 				<div class="menu__item">
 					<a href="#" class="menu__item-link">Contacto</a>
-					<img class="menu__item-img" src="vistas/imagenes/imgMenu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
+					<img class="menu__item-img" src="imagenes/imgMenu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>Contacto</span>
@@ -103,7 +98,7 @@ $url = Rutas::rutasArchivosMdl();
 				<div class="container-fluid">
 					<div class="row d-flex justify-content-end">
 						<div class="col-xl-2 col-lg-2 text-center">
-							<a href="#"><img class="imgFooterMenu" src="vistas/imagenes/1.png" alt="Imagen MekaDesign Logo"></a>
+							<a href="#"><img class="imgFooterMenu" src="imagenes/1.png" alt="Imagen MekaDesign Logo"></a>
 						</div>
 						<div class="col-xl-3 col-lg-3 text-center">
 							<a class="redesSociales facebook" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -354,77 +349,65 @@ $url = Rutas::rutasArchivosMdl();
 	<section class="marcas mt-5 mb-5 pt-5">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/impulso.jpg" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-ElMuraldelosPoblanos-4.png" alt="Meka Design El Mural de los Poblanos">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/inamiki.png" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-Impulsoconsultoria-2.png" alt="Meka Design - Logo - Impulso consultoria">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/logo.png" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-Inamiki.png" alt="Meka Design Logo Inamiki">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/propeninsular.png" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-ProPeninsular-3.png" alt="Meka Design Logo ProPeninsular">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/impulso.jpg" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-ElMuraldelosPoblanos-4.png" alt="Meka Design El Mural de los Poblanos">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/inamiki.png" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-Impulsoconsultoria-2.png" alt="Meka Design - Logo - Impulso consultoria">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/logo.png" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-Inamiki.png" alt="Meka Design Logo Inamiki">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/propeninsular.png" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-ProPeninsular-3.png" alt="Meka Design Logo ProPeninsular">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/impulso.jpg" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-ElMuraldelosPoblanos-4.png" alt="Meka Design El Mural de los Poblanos">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/inamiki.png" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-Impulsoconsultoria-2.png" alt="Meka Design - Logo - Impulso consultoria">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/logo.png" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-Inamiki.png" alt="Meka Design Logo Inamiki">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/propeninsular.png" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-ProPeninsular-3.png" alt="Meka Design Logo ProPeninsular">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/impulso.jpg" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-ElMuraldelosPoblanos-4.png" alt="Meka Design El Mural de los Poblanos">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/inamiki.png" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-Impulsoconsultoria-2.png" alt="Meka Design - Logo - Impulso consultoria">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/logo.png" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-Inamiki.png" alt="Meka Design Logo Inamiki">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/propeninsular.png" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-ProPeninsular-3.png" alt="Meka Design Logo ProPeninsular">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/impulso.jpg" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-ElMuraldelosPoblanos-4.png" alt="Meka Design El Mural de los Poblanos">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/inamiki.png" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-Impulsoconsultoria-2.png" alt="Meka Design - Logo - Impulso consultoria">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/logo.png" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-Inamiki.png" alt="Meka Design Logo Inamiki">
 				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/propeninsular.png" alt="">
-				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/impulso.jpg" alt="">
-				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/inamiki.png" alt="">
-				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/logo.png" alt="">
-				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/marcas/propeninsular.png" alt="">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
+					<img class="imgSeccionMarcas" src="imagenes/marcas/MekaDesign-Logo-ProPeninsular-3.png" alt="Meka Design Logo ProPeninsular">
 				</div>
 			</div>
 		</div>
@@ -441,7 +424,7 @@ $url = Rutas::rutasArchivosMdl();
 					</ul>
 				</div>
 				<div class="col-xl-4 col-lg-4 col-md-4 text-center">
-					<a href=""><img class="logoPrincipalFooter" src="vistas/imagenes/1.png" alt=""></a>
+					<a href=""><img class="logoPrincipalFooter" src="imagenes/1.png" alt=""></a>
 				</div>
 				<div class="contenedorRedesSociales col-xl-4 col-lg-4 col-md-4 text-right">
 					<a class="redesSocialesFooter facebook" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -471,8 +454,8 @@ $url = Rutas::rutasArchivosMdl();
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<!-- Scripts Parallax-->
-	<script src="<?php echo $url; ?>js/libraries.min.js"></script>
-	<script src="<?php echo $url; ?>js/jquery.parallax.js"></script>
+	<script src="js/libraries.min.js"></script>
+	<script src="js/jquery.parallax.js"></script>
 
 	<!-- Activacion menu hamburguesa Jquery-->
 	<script type="text/javascript">
