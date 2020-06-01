@@ -1,0 +1,473 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+/**************** MENU ***************/
+p.menuTexto{
+     margin: 0;
+     padding: 0;
+     color: #950000;
+     font-size: 20px;
+     font-weight: bold;
+   }
+   img.imgLogoMenu{
+     width: 200px;
+   }
+   
+   hr.linea1, hr.linea3{
+     position: absolute;
+        transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
+        transform-origin : 0px 100%;
+     width: 20px;
+     border: 1px solid #950000;
+     margin-top: 0;
+     margin-bottom: 0;
+     transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
+        /* transform-origin : 0px 100%; */
+   }
+   hr.linea2{
+     width: 30px;
+     border: 1px solid #950000;
+     margin: 10px 0;
+     transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
+        /* transform-origin : 0px 100%; */
+   }
+   div.menuHamburguesa{
+     cursor: pointer;
+   }
+   
+   /* animacion */
+   .visible_menu hr.linea1{
+     transform: rotate(45deg) translate(0px,1px); 
+     width: 30px;
+     border: 1.5px solid #950000;
+   }
+    
+   .visible_menu hr.linea2{
+     opacity: 0;
+   }
+    
+   .visible_menu hr.linea3{
+     transform: rotate(-45deg) translate(-1px,1px); 
+     width: 30px;
+     border: 1.5px solid #950000;
+   }
+   /* quitar el scroll del body cuando se pone el menu desplegado */
+   .visible_menu{
+     overflow: hidden!important;
+   }
+   /**************** esconder/aparecer menu *********************/
+   .slideUp {
+     -webkit-transform: translateY(-100px);
+     transform: translateY(-100px);
+     transition: transform .5s ease-out;
+   }
+   
+   .slideDown {
+     -webkit-transform: translateY(0);
+     transform: translateY(0);
+     transition: transform .5s ease-out;
+   }
+   
+   /* fin menu */
+   
+   /*********************** menu desplegado ********************/
+   div.contenedorMenuDesplegado{
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: -100%; /* Escondemos nuestro menú con un valor negativo */ 
+     width: 100%;
+     z-index: 1001;/*SE PONE Z-INDEX ---> 10001 PARA QUE SE SOBREPONGA POR ENCIMA DE EL EFECTO DE LOS PROYECTOS */
+     opacity: 0;
+     transition: all 0.75s ease;
+     font-size: 1.2em;
+     overflow-x: hidden;
+     --color-bg: #f8ecde;
+     background-color: var(--color-bg);
+   }
+   .visible_menu div.contenedorMenuDesplegado{
+     left: 0;
+     opacity: 1;
+   }
+   
+   section.bodyContenedor {
+        --color-text: #111;
+        --color-link: #b19e7f;
+        --color-link-hover: #000;
+        color: var(--color-text);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: sofia-pro, sans-serif;
+   }
+   @keyframes grain {
+     0%, 100% { transform:translate(0, 0); }
+     10% { transform:translate(-5%, -10%); }
+     20% { transform:translate(-15%, 5%); }
+     30% { transform:translate(7%, -25%); }
+     40% { transform:translate(-5%, 25%); }
+     50% { transform:translate(-15%, 10%); }
+     60% { transform:translate(15%, 0%); }
+     70% { transform:translate(0%, 15%); }
+     80% { transform:translate(3%, 35%); }
+     90% { transform:translate(-10%, 10%); }
+   }
+   .menuDesplegado {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 10vh 0 25vh;
+        --marquee-width: 100vw;
+        --offset: 20vw;
+        --move-initial: calc(-25% + var(--offset));
+        --move-final: calc(-50% + var(--offset));
+        --item-font-size: 10vw;
+        counter-reset: menu;
+   }
+   
+   .menu__item {
+        cursor: default;
+        position: relative;
+        padding: 0 5vw;
+   }
+   
+   .menu__item-link {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        -webkit-text-stroke: 1.5px #950000;
+        text-stroke: 1.5px #950000;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+        color: transparent;
+        transition: opacity 0.4s;
+   }
+   
+   .menu__item-link::before {
+        all: initial;
+        font-family: sofia-pro, sans-serif;
+        counter-increment: menu;
+        content:  counter(menu);
+        position: absolute;
+        bottom: 60%;
+        left: 0;
+        pointer-events: none;
+   }
+   
+   .menu__item-link:hover {
+        transition-duration: 0.1s;
+        opacity: 0;
+   }
+   
+   .menu__item-img {
+        pointer-events: none;
+        position: absolute;
+        height: 50vh;
+        max-height: 400px;
+        opacity: 0;
+        left: 100%;
+        top: 50%;
+        transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+   }
+   
+   .menu__item-link:hover + .menu__item-img {
+        opacity: 1;
+        transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+        transition: all 0.4s;
+   }
+   
+   /* Make sure 3 items are visible in the viewport by setting suitable font size. */
+   
+   .marquee {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: var(--marquee-width);
+        overflow: hidden;
+        pointer-events: none;
+        mix-blend-mode: color-burn;
+   }
+   
+   .marquee__inner {
+        width: fit-content;
+        display: flex;
+        position: relative;
+        transform: translate3d(var(--move-initial), 0, 0);
+        animation: marquee 5s linear infinite;
+        animation-play-state: paused;
+        opacity: 0;
+        transition: opacity 0.1s;
+   }
+   
+   .menu__item-link:hover ~ .marquee .marquee__inner {
+        animation-play-state: running;
+        opacity: 1;
+        transition-duration: 0.4s;
+   }
+   
+   .marquee span {
+        text-align: center;
+   }
+   
+   .menu__item-link,
+   .marquee span {
+        white-space: nowrap;
+        font-size: var(--item-font-size);
+        padding: 0 1vw;
+        font-weight: 900;
+        line-height: 1.15;
+   }
+   
+   .marquee span {
+     font-style: italic;
+     
+   }
+   
+   @keyframes marquee {
+        0% {
+             transform: translate3d(var(--move-initial), 0, 0);
+        }
+   
+        100% {
+             transform: translate3d(var(--move-final), 0, 0);
+        }
+   }
+   /* Fin efecto en el menu */
+   /* redes sociales */
+   a.redesSociales{
+     font-size: 2rem;
+     color: #950000;
+     margin: 0px 20px;
+     padding: 10px;
+     transition: ease-in-out .5s;
+   }
+   a.redesSociales:hover:nth-child(1){
+     color: white;
+     background-color: #3b5998;
+   }
+   a.redesSociales:hover:nth-child(2){
+     color: white;
+     background-color: #2867B2;
+   }
+   
+   img.imgFooterMenu{
+     width: 150px;
+   }
+   
+   /*********************** fin menu desplegado ********************/
+   /* Fin menu en general */
+
+   div.divMenu{
+        background-color: black;
+        height: 80px;
+        width: 100%;
+   }
+   /**************titulo sobre nosotros *******************/
+div.contenedorSobreNosotros{
+     height: 200px;
+}
+div.contenedorSobreNosotros h1{
+     font-size: 70px;
+     color: #950000;
+     font-family: 'Open Sans', sans-serif;
+     font-weight: bold;
+     margin-left: 100px;
+}
+/*** linea division ***/
+hr.lineaDivision{
+  border: .3px solid #950000;
+  
+}
+/************* contendor contacto *********/
+div.contenedorContacto{
+  margin: 0 0 70px 0;
+}
+/******* INFORMACION DE CONTACTO *********/
+p.textoContacto{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+h1.titulosContactos{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+p.telefonosContacto{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+p.telefonosContacto i{
+  color: #950000;
+  font-size: 15px;
+}
+p.horarios{
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: .5;
+}
+p.textoPequeño{
+  font-size: 15px;
+  line-height: 0;
+  margin-top: 1rem;
+}
+h4.tituloh4{
+  font-size: 20px;
+  color: #950000;
+  font-weight: bold;
+  line-height: 0;
+}
+hr.lineaRojaMensajeContacto{
+  border: 1px solid #950000;
+  width: 150px;
+  margin-right: 100px;
+}
+button.btnEnviarMensaje{
+  background-color: transparent;
+  border: 1px solid #950000;
+  color: #950000;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 5px 30px;
+  transition: all .4s ease;
+}
+button.btnEnviarMensaje:hover{
+  border: 1px solid black;
+}
+.form-control{
+  border: 1px solid black;
+  border-radius: 0;
+}
+textarea.form-control{
+  height: 200px;
+  max-height: 250px;
+  min-height: 200px;
+  width: 100%;
+  max-width: 100%;
+}
+.form-control:focus{
+  border-color: black!important;
+  outline: none!important;
+  box-shadow: none!important;
+}
+p.textRequerido{
+  font-size: .7rem;
+  color: black;
+  font-weight: bold;
+}
+/******** estilos footer *************/
+footer.footer{
+     background-color: black;
+     padding-bottom: 30px;
+   
+   }
+   ul.menuFooter{
+     margin: 0;
+     padding: 0;
+     list-style: none;
+   }
+   ul.menuFooter li{
+     margin-right: 20px;
+   }
+   ul.menuFooter li:last-child{
+     margin-right: 0px;
+   }
+   ul.menuFooter a.opcionMenu{
+     font-size: 20px;
+     transition: ease-in-out .5s all;
+     color: #950000;
+     text-decoration: none;
+   }
+   ul.menuFooter a.opcionMenu:hover{
+     color: white;
+   }
+   img.logoPrincipalFooter{
+     width: 307px;
+   }
+   a.redesSocialesFooter{
+     color:  #950000;
+     font-size: 20px;
+     margin-right: 20px;
+     transition: all .4s ease-in-out;
+   }
+   a.redesSocialesFooter:last-child{
+     margin-right: 0px;
+   }
+   a.redesSocialesFooter:hover{
+     color:  white;
+   }
+   hr.lineaFooter{
+     border: .5px solid #950000;
+   }
+   p.mekaDesign{
+     color: white;
+     font-size: 12px;
+     margin-bottom: 0;
+   }
+   a.privacidadPoliticas{
+     color: white;
+     font-size: 12px;
+     margin-bottom: 0;
+   }
+   
+   /******** fin estilos footer *************/
+
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+     /* Titulo sobre nosotros */
+     div.contenedorSobreNosotros h1{
+          font-size: 3rem;
+          margin-left: 0;
+     }
+     /* IMAGEN LOGO PRINCIPAL FOOTER */
+     img.logoPrincipalFooter{
+          width: 207px;
+     }
+
+ }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+     /********* FOOTER *************/
+     ul.menuFooter {
+          margin-top: 20px;
+          justify-content: center;
+     }
+     div.contenedorRedesSociales{
+          display: flex;
+          justify-content: center;
+     }
+     div.contenedorPoliticasTerminos{
+          text-align: center!important;
+     }  
+     /******* INFORMACION DE CONTACTO ************/
+     div.contenedorMensajeContacto{
+       margin-top: 50px;
+     }
+     p.textoPequeño{
+       text-align: center!important;
+    }
+    h4.tituloh4{
+      text-align: center!important;
+      line-height: 1;
+    }
+    hr.lineaRojaMensajeContacto{
+      width: 100%;
+    }
+ }
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+     /* Titulo sobre nosotros */
+     div.contenedorSobreNosotros h1{
+          font-size: 2rem;
+          text-align: center;
+     }
+ }
