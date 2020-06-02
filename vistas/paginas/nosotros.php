@@ -17,12 +17,12 @@
 	<!-- BOOTSTRAP 4-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- FontAwesone -->
-	<link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+	<link rel="stylesheet" href="vistas/plugins/fontawesome-free/css/all.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
 	<!-- GoogleFonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
 	<!-- ESTILOS PROPIOS -->
-	<link rel="stylesheet" type="text/css" href="css/nosotros.css"/>
+	<link rel="stylesheet" type="text/css" href="vistas/css/nosotros.css"/>
 
 </head>
 <body>
@@ -32,7 +32,7 @@
 		<div class="container-fluid">
 			<header class="menu d-flex justify-content-between">
 				<div class="logoMekaDesign">
-					<a href="index.html"><img class="imgLogoMenu" src="imagenes/menu/logo-MekaDesing.png" alt="MekaDesign Logo"></a>
+					<a href="inicio"><img class="imgLogoMenu" src="vistas/imagenes/menu/logo-MekaDesing.png" alt="MekaDesign Logo"></a>
 				</div>
 				<div id="menu_on" class="menuHamburguesa d-flex align-items-center">
 					<p class="menuTexto mr-3">Menú</p>
@@ -52,8 +52,8 @@
 		<section class="bodyContenedor">
 			<nav class="menuDesplegado">
 				<div class="menu__item">
-					<a href="index.html" class="menu__item-link">Inicio</a>
-					<img class="menu__item-img" src="imagenes/menu/logo-MekaDesing.png" alt="MekaDesign logo principal"/>
+					<a href="inicio" class="menu__item-link">Inicio</a>
+					<img class="menu__item-img" src="vistas/imagenes/menu/logo-MekaDesing.png" alt="MekaDesign logo principal"/>
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>Inicio</span>
@@ -64,8 +64,8 @@
 					</div>
 				</div>
 				<div class="menu__item">
-					<a href="nosotros.html" class="menu__item-link">Nosotros</a>
-					<img class="menu__item-img" src="imagenes/menu/nosotros.jpg" alt="Imagen nosotros MekaDesign"/>
+					<a href="nosotros" class="menu__item-link">Nosotros</a>
+					<img class="menu__item-img" src="vistas/imagenes/menu/nosotros.jpg" alt="Imagen nosotros MekaDesign"/>
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>Nosotros</span>
@@ -76,8 +76,8 @@
 					</div>
 				</div>
 				<div class="menu__item">
-					<a href="proyectos.html" class="menu__item-link">Trabajos</a>
-					<img class="menu__item-img" src="imagenes/menu/trabajos.jpg" alt="Imagem trabajos MekaDesign"/>
+					<a href="proyectos" class="menu__item-link">Trabajos</a>
+					<img class="menu__item-img" src="vistas/imagenes/menu/trabajos.jpg" alt="Imagem trabajos MekaDesign"/>
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>Trabajos</span>
@@ -88,8 +88,8 @@
 					</div>
 				</div>
 				<div class="menu__item">
-					<a href="contacto.html" class="menu__item-link">Contacto</a>
-					<img class="menu__item-img" src="imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
+					<a href="contacto" class="menu__item-link">Contacto</a>
+					<img class="menu__item-img" src="vistas/imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>Contacto</span>
@@ -105,7 +105,7 @@
 				<div class="container-fluid">
 					<div class="row d-flex justify-content-end">
 						<div class="col-xl-2 col-lg-2 text-center">
-							<a href="index.html"><img class="imgFooterMenu" src="imagenes/menu/logo-MekaDesing.png" alt="Imagen MekaDesign Logo"></a>
+							<a href="inicio"><img class="imgFooterMenu" src="vistas/imagenes/menu/logo-MekaDesing.png" alt="Imagen MekaDesign Logo"></a>
 						</div>
 						<div class="col-xl-3 col-lg-3 text-center">
 							<a class="redesSociales facebook" target="blank" href="https://www.facebook.com/MekaDesignMX"><i class="fab fa-facebook-f"></i></a>
@@ -147,7 +147,7 @@
 			<nav class="listaServicios">
 				<div class="menuItem">
 					<p class="menuItem-link">Sitios Web</p>
-					<img class="menuItem-img" src="imagenes/menu/logo-MekaDesing.png" alt="MekaDesign logo principal"/>
+					<img class="menuItem-img" src="vistas/imagenes/menu/logo-MekaDesing.png" alt="MekaDesign logo principal"/>
 					<div class="marqueeServicios">
 						<div class="marqueeInner" aria-hidden="true">
 							<span>Sitios Web</span>
@@ -156,7 +156,7 @@
 				</div>
 				<div class="menuItem">
 					<p class="menuItem-link">Sistemas Web</p>
-					<img class="menuItem-img" src="imagenes/menu/nosotros.jpg" alt="Imagen nosotros MekaDesign"/>
+					<img class="menuItem-img" src="vistas/imagenes/menu/nosotros.jpg" alt="Imagen nosotros MekaDesign"/>
 					<div class="marqueeServicios">
 						<div class="marqueeInner" aria-hidden="true">
 							<span>Sistemas Web</span>
@@ -165,7 +165,7 @@
 				</div>
 				<div class="menuItem">
 					<p class="menuItem-link">Aplicaciones Móviles</p>
-					<img class="menuItem-img" src="imagenes/menu/trabajos.jpg" alt="Imagem trabajos MekaDesign"/>
+					<img class="menuItem-img" src="vistas/imagenes/menu/trabajos.jpg" alt="Imagem trabajos MekaDesign"/>
 					<div class="marqueeServicios">
 						<div class="marqueeInner" aria-hidden="true">
 							<span>Aplicaciones Móviles</span>
@@ -174,7 +174,7 @@
 				</div>
 				<div class="menuItem">
 					<p class="menuItem-link">Ecommerce</p>
-					<img class="menuItem-img" src="imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
+					<img class="menuItem-img" src="vistas/imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
 					<div class="marqueeServicios">
 						<div class="marqueeInner" aria-hidden="true">
 							<span>Ecommerce</span>
@@ -183,7 +183,7 @@
 				</div>
 				<div class="menuItem">
 					<p class="menuItem-link">Diseño Web</p>
-					<img class="menuItem-img" src="imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
+					<img class="menuItem-img" src="vistas/imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
 					<div class="marqueeServicios">
 						<div class="marqueeInner" aria-hidden="true">
 							<span>Diseño Web</span>
@@ -192,7 +192,7 @@
 				</div>
 				<div class="menuItem">
 					<p class="menuItem-link">Diseño Gráfico</p>
-					<img class="menuItem-img" src="imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
+					<img class="menuItem-img" src="vistas/imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
 					<div class="marqueeServicios">
 						<div class="marqueeInner" aria-hidden="true">
 							<span>Diseño Gráfico</span>
@@ -201,7 +201,7 @@
 				</div>
 				<div class="menuItem">
 					<p class="menuItem-link">Administración de Redes Sociales</p>
-					<img class="menuItem-img" src="imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
+					<img class="menuItem-img" src="vistas/imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
 					<div class="marqueeServicios">
 						<div class="marqueeInner" aria-hidden="true">
 							<span>Administración de Redes Sociales</span>
@@ -210,7 +210,7 @@
 				</div>
 				<div class="menuItem">
 					<p class="menuItem-link">Diseño de Logotipo</p>
-					<img class="menuItem-img" src="imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
+					<img class="menuItem-img" src="vistas/imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
 					<div class="marqueeServicios">
 						<div class="marqueeInner" aria-hidden="true">
 							<span>Diseño de Logotipo</span>
@@ -219,7 +219,7 @@
 				</div>
 				<div class="menuItem">
 					<p class="menuItem-link">Presentación Dinámica</p>
-					<img class="menuItem-img" src="imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
+					<img class="menuItem-img" src="vistas/imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
 					<div class="marqueeServicios">
 						<div class="marqueeInner" aria-hidden="true">
 							<span>Presentación Dinámica</span>
@@ -228,7 +228,7 @@
 				</div>
 				<div class="menuItem">
 					<p class="menuItem-link">Diseño de Tarjetas de Presentación</p>
-					<img class="menuItem-img" src="imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
+					<img class="menuItem-img" src="vistas/imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
 					<div class="marqueeServicios">
 						<div class="marqueeInner" aria-hidden="true">
 							<span>Diseño de Tarjetas de Presentación</span>
@@ -237,7 +237,7 @@
 				</div>
 				<div class="menuItem">
 					<p class="menuItem-link">Presentación Power Point</p>
-					<img class="menuItem-img" src="imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
+					<img class="menuItem-img" src="vistas/imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
 					<div class="marqueeServicios">
 						<div class="marqueeInner" aria-hidden="true">
 							<span>Presentación Power Point</span>
@@ -270,7 +270,7 @@
 						<p class="parrafoLoqueHacemos">Recurso sin igual con mentalidad de inicio</p>
 						<p class="parrafoLoqueHacemos">Brindamos una experiencia de usuario incomparable a las marcas grandes y pequeñas, brindando servicios en estrategia, diseño y desarrollo, brindando soporte y estrategias continuas para activar las marcas en su
 						audiencia.</p>
-						<a class="linkTrabajos" href="proyectos.html">Descubre nuestros trabajos</a>
+						<a class="linkTrabajos" href="proyectos">Descubre nuestros trabajos</a>
 					</div>
 
 					<div class="col-xl-8 col-lg-8 col-md-12">
@@ -320,7 +320,7 @@
 		<div class="container-fluid text-center hoverDiv">
 				<h2 class="h2Contacto">Contáctanos</h2>
 				<p class="parrafoTextosLink">Grande o pequeño, haz que tu idea pase hoy </p>
-				<a class="linnkContacto" href="contacto.html">Coméntanos tu proyecto</a>
+				<a class="linnkContacto" href="contacto">Coméntanos tu proyecto</a>
 		</div>
 	</div>
 
@@ -331,13 +331,13 @@
 			<div class="row d-flex align-items-center">
 				<div class="col-xl-4 col-lg-4 col-md-4 text-center">
 					<ul class="menuFooter d-flex">
-						<li><a class="opcionMenu" href="nosotros.html">Nosotros</a></li>	
-						<li><a class="opcionMenu" href="proyectos.html">Trabajos</a></li>	
-						<li><a class="opcionMenu" href="contacto.html">Contacto</a></li>	
+						<li><a class="opcionMenu" href="nosotros">Nosotros</a></li>	
+						<li><a class="opcionMenu" href="proyectos">Trabajos</a></li>	
+						<li><a class="opcionMenu" href="contacto">Contacto</a></li>	
 					</ul>
 				</div>
 				<div class="col-xl-4 col-lg-4 col-md-4 text-center">
-					<a href="index.html"><img class="logoPrincipalFooter" src="imagenes/menu/logo-MekaDesing.png" alt=""></a>
+					<a href="inicio"><img class="logoPrincipalFooter" src="vistas/imagenes/menu/logo-MekaDesing.png" alt=""></a>
 				</div>
 				<div class="contenedorRedesSociales col-xl-4 col-lg-4 col-md-4 text-right">
 					<a class="redesSocialesFooter facebook" target="blank" href="https://www.facebook.com/MekaDesignMX"><i class="fab fa-facebook-f"></i></a>
@@ -368,7 +368,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 	<!-- Menu -->
-	<script src="js/index/menu.js"></script>
+	<script src="vistas/js/index/menu.js"></script>
 
 </body>
 </html>

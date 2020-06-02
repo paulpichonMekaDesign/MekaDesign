@@ -17,12 +17,12 @@
 	<!-- BOOTSTRAP 4-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- FontAwesone -->
-	<link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+	<link rel="stylesheet" href="vistas/plugins/fontawesome-free/css/all.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
 	<!-- GoogleFonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
 	<!-- ESTILOS PROPIOS -->
-	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="vistas/css/index.css"/>
 
 </head>
 <body>
@@ -32,7 +32,7 @@
 		<div class="container-fluid">
 			<header class="menu d-flex justify-content-between">
 				<div class="logoMekaDesign">
-					<a href="index.html"><img class="imgLogoMenu" src="imagenes/menu/logo-MekaDesing.png" alt="MekaDesign Logo"></a>
+					<a href="inicio"><img class="imgLogoMenu" src="vistas/imagenes/menu/logo-MekaDesing.png" alt="MekaDesign Logo"></a>
 				</div>
 				<div id="menu_on" class="menuHamburguesa d-flex align-items-center">
 					<p class="menuTexto mr-3">Menú</p>
@@ -52,8 +52,8 @@
 		<section class="bodyContenedor">
 			<nav class="menuDesplegado">
 				<div class="menu__item">
-					<a href="index.html" class="menu__item-link">Inicio</a>
-					<img class="menu__item-img" src="imagenes/menu/logo-MekaDesing.png" alt="MekaDesign logo principal"/>
+					<a href="inicio" class="menu__item-link">Inicio</a>
+					<img class="menu__item-img" src="vistas/imagenes/menu/logo-MekaDesing.png" alt="MekaDesign logo principal"/>
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>Inicio</span>
@@ -64,8 +64,8 @@
 					</div>
 				</div>
 				<div class="menu__item">
-					<a href="nosotros.html" class="menu__item-link">Nosotros</a>
-					<img class="menu__item-img" src="imagenes/menu/nosotros.jpg" alt="Imagen nosotros MekaDesign"/>
+					<a href="nosotros" class="menu__item-link">Nosotros</a>
+					<img class="menu__item-img" src="vistas/imagenes/menu/nosotros.jpg" alt="Imagen nosotros MekaDesign"/>
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>Nosotros</span>
@@ -76,8 +76,8 @@
 					</div>
 				</div>
 				<div class="menu__item">
-					<a href="proyectos.html" class="menu__item-link">Trabajos</a>
-					<img class="menu__item-img" src="imagenes/menu/trabajos.jpg" alt="Imagem trabajos MekaDesign"/>
+					<a href="proyectos" class="menu__item-link">Trabajos</a>
+					<img class="menu__item-img" src="vistas/imagenes/menu/trabajos.jpg" alt="Imagem trabajos MekaDesign"/>
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>Trabajos</span>
@@ -88,8 +88,8 @@
 					</div>
 				</div>
 				<div class="menu__item">
-					<a href="contacto.html" class="menu__item-link">Contacto</a>
-					<img class="menu__item-img" src="imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
+					<a href="contacto" class="menu__item-link">Contacto</a>
+					<img class="menu__item-img" src="vistas/imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>Contacto</span>
@@ -105,7 +105,7 @@
 				<div class="container-fluid">
 					<div class="row d-flex justify-content-end">
 						<div class="col-xl-2 col-lg-2 text-center">
-							<a href="index.html"><img class="imgFooterMenu" src="imagenes/menu/logo-MekaDesing.png" alt="Imagen MekaDesign Logo"></a>
+							<a href="inicio"><img class="imgFooterMenu" src="vistas/imagenes/menu/logo-MekaDesing.png" alt="Imagen MekaDesign Logo"></a>
 						</div>
 						<div class="col-xl-3 col-lg-3 text-center">
 							<a class="redesSociales facebook" target="blank" href="https://www.facebook.com/MekaDesignMX"><i class="fab fa-facebook-f"></i></a>
@@ -172,7 +172,7 @@
 					inmersos en esta “nueva” realidad.
 				</h1>
 
-				<a class="sobreNosotrosTexto" href="nosotros.html">Sobre Nosotros</a>
+				<a class="sobreNosotrosTexto" href="nosotros">Sobre Nosotros</a>
 				<hr class="lineaBajoLink">
 			</div>
 		</div>
@@ -185,7 +185,7 @@
 				<h1 class="tituloServicios text-center mt-5 mb-5">Servicios</h1>
 				<div class="row">
 					<div class="col-xl-6 col-md-6">
-						<a href="proyectos.html">
+						<a href="proyectos">
 							<div class="grid__item" >
 								<div class="glitch glitch--style-1">
 									<div class="glitch__img"></div>
@@ -199,7 +199,7 @@
 						</a>
 					</div>
 					<div class="col-xl-6 col-md-6">
-						<a href="proyectos.html">
+						<a href="proyectos">
 							<div class="grid__item">
 								<div class="glitch glitch--style-2">
 									<div class="glitch__img"></div>
@@ -213,7 +213,7 @@
 						</a>
 					</div>
 					<div class="col-xl-6 col-md-6">
-						<a href="proyectos.html">
+						<a href="proyectos">
 							<div class="grid__item">
 								<div class="glitch glitch--vertical glitch--style-3">
 									<div class="glitch__img"></div>
@@ -227,7 +227,7 @@
 						</a>
 					</div>
 					<div class="col-xl-6 col-md-6">
-						<a href="proyectos.html">
+						<a href="proyectos">
 							<div class="grid__item">
 								<div class="glitch glitch--style-4">
 									<div class="glitch__img"></div>
@@ -241,7 +241,7 @@
 						</a>
 					</div>
 					<div class="col-xl-6 col-md-6">
-						<a href="proyectos.html">
+						<a href="proyectos">
 							<div class="grid__item">
 								<div class="glitch glitch--style-5">
 									<div class="glitch__img"></div>
@@ -255,7 +255,7 @@
 						</a>
 					</div>
 					<div class="col-xl-6 col-md-6">
-						<a href="proyectos.html">
+						<a href="proyectos">
 							<div class="grid__item">
 								<div class="glitch glitch--style-6">
 									<div class="glitch__img"></div>
@@ -269,7 +269,7 @@
 						</a>
 					</div>
 					<div class="col-xl-6 col-md-6">
-						<a href="proyectos.html">
+						<a href="proyectos">
 							<div class="grid__item">
 								<div class="glitch glitch--style-6">
 									<div class="glitch__img"></div>
@@ -283,7 +283,7 @@
 						</a>
 					</div>
 					<div class="col-xl-6 col-md-6">
-						<a href="proyectos.html">
+						<a href="proyectos">
 							<div class="grid__item">
 								<div class="glitch glitch--style-6">
 									<div class="glitch__img"></div>
@@ -297,7 +297,7 @@
 						</a>
 					</div>
 					<div class="col-xl-6 col-md-6">
-						<a href="proyectos.html">
+						<a href="proyectos">
 							<div class="grid__item">
 								<div class="glitch glitch--style-6">
 									<div class="glitch__img"></div>
@@ -311,7 +311,7 @@
 						</a>
 					</div>
 					<div class="col-xl-6 col-md-6">
-						<a href="proyectos.html">
+						<a href="proyectos">
 							<div class="grid__item">
 								<div class="glitch glitch--style-6">
 									<div class="glitch__img"></div>
@@ -325,7 +325,7 @@
 						</a>
 					</div>
 					<div class="col-xl-6 col-md-6">
-						<a href="proyectos.html">
+						<a href="proyectos">
 							<div class="grid__item">
 								<div class="glitch glitch--style-6">
 									<div class="glitch__img"></div>
@@ -339,7 +339,7 @@
 						</a>
 					</div>
 					<div class="col-xl-6 col-md-6">
-						<a href="proyectos.html">
+						<a href="proyectos">
 							<div class="grid__item">
 								<div class="glitch glitch--style-6">
 									<div class="glitch__img"></div>
@@ -362,49 +362,49 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="imagenes/index/marcas/MekaDesign-Logo-MCITechnology.png" alt="MekaDesign Logo MCITechnology" title="MekaDesign Logo MCI Technology">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-MCITechnology.png" alt="MekaDesign Logo MCITechnology" title="MekaDesign Logo MCI Technology">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="imagenes/index/marcas/MekaDesign-Logo-Impulsoconsultoria.png" alt="Meka Design - Logo - Impulso consultoria" title="Meka Design - Logo - Impulso consultoria">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-Impulsoconsultoria.png" alt="Meka Design - Logo - Impulso consultoria" title="Meka Design - Logo - Impulso consultoria">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="imagenes/index/marcas/MekaDesign-Logo-CANACOTlaxcala.png" alt="MekaDesign Logo CANACO Tlaxcala" title="MekaDesign Logo CANACO Tlaxcala">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-CANACOTlaxcala.png" alt="MekaDesign Logo CANACO Tlaxcala" title="MekaDesign Logo CANACO Tlaxcala">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="imagenes/index/marcas/MekaDesign-Logo-FemmeDor.png" alt="MekaDesign Logo FemmeDor" title="MekaDesign Logo Femme Dor">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-FemmeDor.png" alt="MekaDesign Logo FemmeDor" title="MekaDesign Logo Femme Dor">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="imagenes/index/marcas/MekaDesign-Logo-GuiaComercialApizaco.png" alt="MekaDesign Logo Guia Comercial Apizaco" title="MekaDesign Logo Guia Comercial Apizaco">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-GuiaComercialApizaco.png" alt="MekaDesign Logo Guia Comercial Apizaco" title="MekaDesign Logo Guia Comercial Apizaco">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="imagenes/index/marcas/MekaDesign-Logo-GulaGourmet.png" alt="MekaDesign Logo GulaGourmet" title="MekaDesign Logo Gula Gourmet">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-GulaGourmet.png" alt="MekaDesign Logo GulaGourmet" title="MekaDesign Logo Gula Gourmet">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="imagenes/index/marcas/MekaDesign-Logo-HacedoresMexico.png" alt="MekaDesign Logo Hacedores Mexico" title="MekaDesign Logo Hacedores Mexico">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-HacedoresMexico.png" alt="MekaDesign Logo Hacedores Mexico" title="MekaDesign Logo Hacedores Mexico">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="imagenes/index/marcas/MekaDesign-Logo-ProPeninsular.png" alt="Meka Design Logo ProPeninsular" title="Meka Design Logo ProPeninsular">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-ProPeninsular.png" alt="Meka Design Logo ProPeninsular" title="Meka Design Logo ProPeninsular">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="imagenes/index/marcas/MekaDesign-Logo-Inamiki.png" alt="Meka Design Logo Inamiki" title="Meka Design Logo Inamiki">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-Inamiki.png" alt="Meka Design Logo Inamiki" title="Meka Design Logo Inamiki">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="imagenes/index/marcas/MekaDesign-Logo-LaDoña.png" alt="MekaDesign Logo LaDoña" title="MekaDesign Logo La Doña">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-LaDoña.png" alt="MekaDesign Logo LaDoña" title="MekaDesign Logo La Doña">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="imagenes/index/marcas/MekaDesign-Logo-MaxShop.png" alt="MekaDesign Logo MaxShop" title="MekaDesign Logo Max Shop">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-MaxShop.png" alt="MekaDesign Logo MaxShop" title="MekaDesign Logo Max Shop">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="imagenes/index/marcas/MekaDesign-Logo-RafaelGalva.png" alt="MekaDesign Logo RafaelGalva" title="MekaDesign Logo Rafael Galva">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-RafaelGalva.png" alt="MekaDesign Logo RafaelGalva" title="MekaDesign Logo Rafael Galva">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="imagenes/index/marcas/MekaDesign-Logo-RealEventosyTurismo.png" alt="MekaDesign Logo Real Eventos y Turismo" title="MekaDesign Logo Real Eventos y Turismo">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-RealEventosyTurismo.png" alt="MekaDesign Logo Real Eventos y Turismo" title="MekaDesign Logo Real Eventos y Turismo">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="imagenes/index/marcas/MekaDesign-Logo-ElMuraldelPo.png" title="Meka Design El Mural de los Poblanos">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-ElMuraldelPo.png" title="Meka Design El Mural de los Poblanos">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="imagenes/index/marcas/MekaDesign-Logo-XRSoluciones.png" alt="MekaDesign Logo XRSoluciones" title="MekaDesign Logo XR Soluciones">
+					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-XRSoluciones.png" alt="MekaDesign Logo XRSoluciones" title="MekaDesign Logo XR Soluciones">
 				</div>
 			</div>
 		</div>
@@ -415,13 +415,13 @@
 			<div class="row d-flex align-items-center">
 				<div class="col-xl-4 col-lg-4 col-md-4 text-center">
 					<ul class="menuFooter d-flex">
-						<li><a class="opcionMenu" href="nosotros.html">Nosotros</a></li>	
-						<li><a class="opcionMenu" href="proyectos.html">Trabajos</a></li>	
-						<li><a class="opcionMenu" href="contacto.html">Contacto</a></li>	
+						<li><a class="opcionMenu" href="nosotros">Nosotros</a></li>	
+						<li><a class="opcionMenu" href="proyectos">Trabajos</a></li>	
+						<li><a class="opcionMenu" href="contacto">Contacto</a></li>	
 					</ul>
 				</div>
 				<div class="col-xl-4 col-lg-4 col-md-4 text-center">
-					<a href="index.html"><img class="logoPrincipalFooter" src="imagenes/menu/logo-MekaDesing.png" alt=""></a>
+					<a href="inicio"><img class="logoPrincipalFooter" src="vistas/imagenes/menu/logo-MekaDesing.png" alt=""></a>
 				</div>
 				<div class="contenedorRedesSociales col-xl-4 col-lg-4 col-md-4 text-right">
 					<a class="redesSocialesFooter facebook" target="blank" href="https://www.facebook.com/MekaDesignMX"><i class="fab fa-facebook-f"></i></a>
@@ -451,10 +451,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<!-- Scripts Parallax-->
-	<script src="js/libraries.min.js"></script>
-	<script src="js/jquery.parallax.js"></script>
+	<script src="vistas/js/libraries.min.js"></script>
+	<script src="vistas/js/jquery.parallax.js"></script>
 	<!-- Menu -->
-	<script src="js/index/menu.js"></script>
+	<script src="vistas/js/index/menu.js"></script>
 
 	<script>
 	// jQuery Selections

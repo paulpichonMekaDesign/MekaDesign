@@ -1,0 +1,3 @@
+Options All -Indexes
+RewriteEngine On
+RewriteRule ^([\w-]+)$ index.php?pagina=$1

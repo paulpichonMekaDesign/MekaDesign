@@ -17,12 +17,12 @@
 	<!-- BOOTSTRAP 4-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- FontAwesone -->
-	<link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+	<link rel="stylesheet" href="vistas/plugins/fontawesome-free/css/all.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
 	<!-- GoogleFonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
 	<!-- ESTILOS PROPIOS -->
-	<link rel="stylesheet" type="text/css" href="css/proyectos.css"/>
+	<link rel="stylesheet" type="text/css" href="vistas/css/proyectos.css"/>
 	<script>document.documentElement.className="js";</script>
 
 </head>
@@ -33,7 +33,7 @@
 		<div class="container-fluid">
 			<header class="menu d-flex justify-content-between">
 				<div class="logoMekaDesign">
-					<a href="index.html"><img class="imgLogoMenu" src="imagenes/menu/logo-MekaDesing.png" alt="MekaDesign Logo"></a>
+					<a href="inicio"><img class="imgLogoMenu" src="vistas/imagenes/menu/logo-MekaDesing.png" alt="MekaDesign Logo"></a>
 				</div>
 				<div id="menu_on" class="menuHamburguesa d-flex align-items-center">
 					<p class="menuTexto mr-3">Menú</p>
@@ -53,8 +53,8 @@
 		<section class="bodyContenedor">
 			<nav class="menuDesplegado">
 				<div class="menu__item">
-					<a href="index.html" class="menu__item-link">Inicio</a>
-					<img class="menu__item-img" src="imagenes/menu/logo-MekaDesing.png" alt="MekaDesign logo principal"/>
+					<a href="inicio" class="menu__item-link">Inicio</a>
+					<img class="menu__item-img" src="vistas/imagenes/menu/logo-MekaDesing.png" alt="MekaDesign logo principal"/>
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>Inicio</span>
@@ -65,8 +65,8 @@
 					</div>
 				</div>
 				<div class="menu__item">
-					<a href="nosotros.html" class="menu__item-link">Nosotros</a>
-					<img class="menu__item-img" src="imagenes/menu/nosotros.jpg" alt="Imagen nosotros MekaDesign"/>
+					<a href="nosotros" class="menu__item-link">Nosotros</a>
+					<img class="menu__item-img" src="vistas/imagenes/menu/nosotros.jpg" alt="Imagen nosotros MekaDesign"/>
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>Nosotros</span>
@@ -77,8 +77,8 @@
 					</div>
 				</div>
 				<div class="menu__item">
-					<a href="proyectos.html" class="menu__item-link">Trabajos</a>
-					<img class="menu__item-img" src="imagenes/menu/trabajos.jpg" alt="Imagem trabajos MekaDesign"/>
+					<a href="proyectos" class="menu__item-link">Trabajos</a>
+					<img class="menu__item-img" src="vistas/imagenes/menu/trabajos.jpg" alt="Imagem trabajos MekaDesign"/>
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>Trabajos</span>
@@ -89,8 +89,8 @@
 					</div>
 				</div>
 				<div class="menu__item">
-					<a href="contacto.html" class="menu__item-link">Contacto</a>
-					<img class="menu__item-img" src="imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
+					<a href="contacto" class="menu__item-link">Contacto</a>
+					<img class="menu__item-img" src="vistas/imagenes/menu/contacto.jpg" alt="Imagen contacto MekaDesign"/>
 					<div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>Contacto</span>
@@ -106,7 +106,7 @@
 				<div class="container-fluid">
 					<div class="row d-flex justify-content-end">
 						<div class="col-xl-2 col-lg-2 text-center">
-							<a href="index.html"><img class="imgFooterMenu" src="imagenes/menu/logo-MekaDesing.png" alt="Imagen MekaDesign Logo"></a>
+							<a href="inicio"><img class="imgFooterMenu" src="vistas/imagenes/menu/logo-MekaDesing.png" alt="Imagen MekaDesign Logo"></a>
 						</div>
 						<div class="col-xl-3 col-lg-3 text-center">
 							<a class="redesSociales facebook" target="blank" href="https://www.facebook.com/MekaDesignMX"><i class="fab fa-facebook-f"></i></a>
@@ -134,7 +134,7 @@
 				<a href="#" class="grid__item">
 					<div class="grid__item-bg"></div>
 					<div class="grid__item-wrap">
-						<img class="grid__item-img" src="imagenes/proyectos/inamiki1.jpg" alt="Some image" />
+						<img class="grid__item-img" src="vistas/imagenes/proyectos/inamiki1.jpg" alt="Some image" />
 					</div>
 					<h3 class="grid__item-title">Inamiki</h3>
 					<h4 class="grid__item-number">001</h4>
@@ -142,7 +142,7 @@
 				<a href="#" class="grid__item">
 					<div class="grid__item-bg"></div>
 					<div class="grid__item-wrap">
-						<img class="grid__item-img" src="imagenes/proyectos/2.jpg" alt="Some image" />
+						<img class="grid__item-img" src="vistas/imagenes/proyectos/2.jpg" alt="Some image" />
 					</div>
 					<h3 class="grid__item-title">One day in Africa</h3>
 					<h4 class="grid__item-number">A21</h4>
@@ -150,7 +150,7 @@
 				<a href="#" class="grid__item">
 					<div class="grid__item-bg"></div>
 					<div class="grid__item-wrap">
-						<img class="grid__item-img" src="imagenes/proyectos/3.jpg" alt="Some image" />
+						<img class="grid__item-img" src="vistas/imagenes/proyectos/3.jpg" alt="Some image" />
 					</div>
 					<h3 class="grid__item-title">Wrecked and happy</h3>
 					<h4 class="grid__item-number">XB3</h4>
@@ -158,7 +158,7 @@
 				<a href="#" class="grid__item">
 					<div class="grid__item-bg"></div>
 					<div class="grid__item-wrap">
-						<img class="grid__item-img" src="imagenes/proyectos/4.jpg" alt="Some image" />
+						<img class="grid__item-img" src="vistas/imagenes/proyectos/4.jpg" alt="Some image" />
 					</div>
 					<h3 class="grid__item-title">The silent thief</h3>
 					<h4 class="grid__item-number">HK9</h4>
@@ -166,7 +166,7 @@
 				<a href="#" class="grid__item">
 					<div class="grid__item-bg"></div>
 					<div class="grid__item-wrap">
-						<img class="grid__item-img" src="imagenes/proyectos/5.jpg" alt="Some image" />
+						<img class="grid__item-img" src="vistas/imagenes/proyectos/5.jpg" alt="Some image" />
 					</div>
 					<h3 class="grid__item-title">Locked away</h3>
 					<h4 class="grid__item-number">FW1</h4>
@@ -174,7 +174,7 @@
 				<a href="#" class="grid__item">
 					<div class="grid__item-bg"></div>
 					<div class="grid__item-wrap">
-						<img class="grid__item-img" src="imagenes/proyectos/6.jpg" alt="Some image" />
+						<img class="grid__item-img" src="vistas/imagenes/proyectos/6.jpg" alt="Some image" />
 					</div>
 					<h3 class="grid__item-title">Isolation and me</h3>
 					<h4 class="grid__item-number">DZ5</h4>
@@ -182,7 +182,7 @@
 				<a href="#" class="grid__item">
 					<div class="grid__item-bg"></div>
 					<div class="grid__item-wrap">
-						<img class="grid__item-img" src="imagenes/proyectos/7.jpg" alt="Some image" />
+						<img class="grid__item-img" src="vistas/imagenes/proyectos/7.jpg" alt="Some image" />
 					</div>
 					<h3 class="grid__item-title">Desert races</h3>
 					<h4 class="grid__item-number">M02</h4>
@@ -190,7 +190,7 @@
 				<a href="#" class="grid__item">
 					<div class="grid__item-bg"></div>
 					<div class="grid__item-wrap">
-						<img class="grid__item-img" src="imagenes/proyectos/8.jpg" alt="Some image" />
+						<img class="grid__item-img" src="vistas/imagenes/proyectos/8.jpg" alt="Some image" />
 					</div>
 					<h3 class="grid__item-title">Transcendence</h3>
 					<h4 class="grid__item-number">KL7</h4>
@@ -198,7 +198,7 @@
 				<a href="#" class="grid__item">
 					<div class="grid__item-bg"></div>
 					<div class="grid__item-wrap">
-						<img class="grid__item-img" src="imagenes/proyectos/9.jpg" alt="Some image" />
+						<img class="grid__item-img" src="vistas/imagenes/proyectos/9.jpg" alt="Some image" />
 					</div>
 					<h3 class="grid__item-title">Loosing my mind</h3>
 					<h4 class="grid__item-number">UY6</h4>
@@ -206,7 +206,7 @@
 				<a href="#" class="grid__item">
 					<div class="grid__item-bg"></div>
 					<div class="grid__item-wrap">
-						<img class="grid__item-img" src="imagenes/proyectos/10.jpg" alt="Some image" />
+						<img class="grid__item-img" src="vistas/imagenes/proyectos/10.jpg" alt="Some image" />
 					</div>
 					<h3 class="grid__item-title">Holding your breath</h3>
 					<h4 class="grid__item-number">OP2</h4>
@@ -214,7 +214,7 @@
 				<a href="#" class="grid__item">
 					<div class="grid__item-bg"></div>
 					<div class="grid__item-wrap">
-						<img class="grid__item-img" src="imagenes/proyectos/11.jpg" alt="Some image" />
+						<img class="grid__item-img" src="vistas/imagenes/proyectos/11.jpg" alt="Some image" />
 					</div>
 					<h3 class="grid__item-title">Making the best of it</h3>
 					<h4 class="grid__item-number">EC5</h4>
@@ -222,7 +222,7 @@
 				<a href="#" class="grid__item">
 					<div class="grid__item-bg"></div>
 					<div class="grid__item-wrap">
-						<img class="grid__item-img" src="imagenes/proyectos/12.jpg" alt="Some image" />
+						<img class="grid__item-img" src="vistas/imagenes/proyectos/12.jpg" alt="Some image" />
 					</div>
 					<h3 class="grid__item-title">Haunted Blessings</h3>
 					<h4 class="grid__item-number">2VX</h4>
@@ -232,7 +232,7 @@
 		<div class="content">
 			<div class="content__item">
 				<div class="content__item-intro">
-					<img class="content__item-img" src="imagenes/proyectos/inamiki1.jpg" alt="Some image" />
+					<img class="content__item-img" src="vistas/imagenes/proyectos/inamiki1.jpg" alt="Some image" />
 					<h2 class="content__item-title">Inamiki</h2>
 				</div>
 				<div class="contenedorInformacionProyecto">
@@ -253,7 +253,7 @@
 						</div>
 					</div>
 				</div>
-					<img class="imgProyectoInfo" src="imagenes/proyectos/inamiki3.jpg" alt="">
+					<img class="imgProyectoInfo" src="vistas/imagenes/proyectos/inamiki3.jpg" alt="">
 				<div class="infoTecnologiasUsadas">
 					<div class="container-fluid">
 						<div class="row">
@@ -287,11 +287,11 @@
 						</div>
 					</div>
 				</div>
-				<img class="imgProyectoInfo" src="imagenes/proyectos/inamiki3.jpg" alt="">
+				<img class="imgProyectoInfo" src="vistas/imagenes/proyectos/inamiki3.jpg" alt="">
 			</div><!-- /content__item -->
 			<div class="content__item">
 				<div class="content__item-intro">
-					<img class="content__item-img" src="imagenes/proyectos/2.jpg" alt="Some image" />
+					<img class="content__item-img" src="vistas/imagenes/proyectos/2.jpg" alt="Some image" />
 					<h2 class="content__item-title">One day in Africa</h2>
 				</div>
 				<h3 class="content__item-subtitle">"How I learned to cherish life after a trip to hell"</h3>
@@ -303,7 +303,7 @@
 			</div><!-- /content__item -->
 			<div class="content__item">
 				<div class="content__item-intro">
-					<img class="content__item-img" src="imagenes/proyectos/3.jpg" alt="Some image" />
+					<img class="content__item-img" src="vistas/imagenes/proyectos/3.jpg" alt="Some image" />
 					<h2 class="content__item-title">Wrecked and happy</h2>
 				</div>
 				<h3 class="content__item-subtitle">"How I learned to cherish life after a trip to hell"</h3>
@@ -315,7 +315,7 @@
 			</div><!-- /content__item -->
 			<div class="content__item">
 				<div class="content__item-intro">
-					<img class="content__item-img" src="imagenes/proyectos/4.jpg" alt="Some image" />
+					<img class="content__item-img" src="vistas/imagenes/proyectos/4.jpg" alt="Some image" />
 					<h2 class="content__item-title">The silent thief</h2>
 				</div>
 				<h3 class="content__item-subtitle">"How I learned to cherish life after a trip to hell"</h3>
@@ -327,7 +327,7 @@
 			</div><!-- /content__item -->
 			<div class="content__item">
 				<div class="content__item-intro">
-					<img class="content__item-img" src="imagenes/proyectos/5.jpg" alt="Some image" />
+					<img class="content__item-img" src="vistas/imagenes/proyectos/5.jpg" alt="Some image" />
 					<h2 class="content__item-title">Locked away</h2>
 				</div>
 				<h3 class="content__item-subtitle">"How I learned to cherish life after a trip to hell"</h3>
@@ -339,7 +339,7 @@
 			</div><!-- /content__item -->
 			<div class="content__item">
 				<div class="content__item-intro">
-					<img class="content__item-img" src="imagenes/proyectos/6.jpg" alt="Some image" />
+					<img class="content__item-img" src="vistas/imagenes/proyectos/6.jpg" alt="Some image" />
 					<h2 class="content__item-title">Isolation and me</h2>
 				</div>
 				<h3 class="content__item-subtitle">"How I learned to cherish life after a trip to hell"</h3>
@@ -351,7 +351,7 @@
 			</div><!-- /content__item -->
 			<div class="content__item">
 				<div class="content__item-intro">
-					<img class="content__item-img" src="imagenes/proyectos/7.jpg" alt="Some image" />
+					<img class="content__item-img" src="vistas/imagenes/proyectos/7.jpg" alt="Some image" />
 					<h2 class="content__item-title">Desert races</h2>
 				</div>
 				<h3 class="content__item-subtitle">"How I learned to cherish life after a trip to hell"</h3>
@@ -363,7 +363,7 @@
 			</div><!-- /content__item -->
 			<div class="content__item">
 				<div class="content__item-intro">
-					<img class="content__item-img" src="imagenes/proyectos/8.jpg" alt="Some image" />
+					<img class="content__item-img" src="vistas/imagenes/proyectos/8.jpg" alt="Some image" />
 					<h2 class="content__item-title">Transcendence</h2>
 				</div>
 				<h3 class="content__item-subtitle">"How I learned to cherish life after a trip to hell"</h3>
@@ -375,7 +375,7 @@
 			</div><!-- /content__item -->
 			<div class="content__item">
 				<div class="content__item-intro">
-					<img class="content__item-img" src="imagenes/proyectos/9.jpg" alt="Some image" />
+					<img class="content__item-img" src="vistas/imagenes/proyectos/9.jpg" alt="Some image" />
 					<h2 class="content__item-title">Loosing my mind</h2>
 				</div>
 				<h3 class="content__item-subtitle">"How I learned to cherish life after a trip to hell"</h3>
@@ -387,7 +387,7 @@
 			</div><!-- /content__item -->
 			<div class="content__item">
 				<div class="content__item-intro">
-					<img class="content__item-img" src="imagenes/proyectos/10.jpg" alt="Some image" />
+					<img class="content__item-img" src="vistas/imagenes/proyectos/10.jpg" alt="Some image" />
 					<h2 class="content__item-title">Holding your breath</h2>
 				</div>
 				<h3 class="content__item-subtitle">"How I learned to cherish life after a trip to hell"</h3>
@@ -399,7 +399,7 @@
 			</div><!-- /content__item -->
 			<div class="content__item">
 				<div class="content__item-intro">
-					<img class="content__item-img" src="imagenes/proyectos/11.jpg" alt="Some image" />
+					<img class="content__item-img" src="vistas/imagenes/proyectos/11.jpg" alt="Some image" />
 					<h2 class="content__item-title">Making the best of it</h2>
 				</div>
 				<h3 class="content__item-subtitle">"How I learned to cherish life after a trip to hell"</h3>
@@ -411,7 +411,7 @@
 			</div><!-- /content__item -->
 			<div class="content__item">
 				<div class="content__item-intro">
-					<img class="content__item-img" src="imagenes/proyectos/12.jpg" alt="Some image" />
+					<img class="content__item-img" src="vistas/imagenes/proyectos/12.jpg" alt="Some image" />
 					<h2 class="content__item-title">Haunted Blessings</h2>
 				</div>
 				<h3 class="content__item-subtitle">"How I learned to cherish life after a trip to hell"</h3>
@@ -439,7 +439,7 @@
 						<p class="parrafoLoqueHacemos">Recurso sin igual con mentalidad de inicio</p>
 						<p class="parrafoLoqueHacemos">Brindamos una experiencia de usuario incomparable a las marcas grandes y pequeñas, brindando servicios en estrategia, diseño y desarrollo, brindando soporte y estrategias continuas para activar las marcas en su
 						audiencia.</p>
-						<a class="linkTrabajos" href="contacto.html">Coméntanos tu proyecto</a>
+						<a class="linkTrabajos" href="contacto">Coméntanos tu proyecto</a>
 					</div>
 
 					<div class="col-xl-8 col-lg-8 col-md-12">
@@ -489,7 +489,7 @@
 		<div class="container-fluid text-center hoverDiv">
 				<h2 class="h2Contacto">Contáctanos</h2>
 				<p class="parrafoTextosLink">Grande o pequeño, haz que tu idea pase hoy </p>
-				<a class="linnkContacto" href="contacto.html">Coméntanos tu proyecto</a>
+				<a class="linnkContacto" href="contacto">Coméntanos tu proyecto</a>
 		</div>
 	</div>
 
@@ -500,13 +500,13 @@
 			<div class="row d-flex align-items-center">
 				<div class="col-xl-4 col-lg-4 col-md-4 text-center">
 					<ul class="menuFooter d-flex">
-						<li><a class="opcionMenu" href="nosotros.html">Nosotros</a></li>	
-						<li><a class="opcionMenu" href="proyectos.html">Trabajos</a></li>	
-						<li><a class="opcionMenu" href="contacto.html">Contacto</a></li>	
+						<li><a class="opcionMenu" href="nosotros">Nosotros</a></li>	
+						<li><a class="opcionMenu" href="proyectos">Trabajos</a></li>	
+						<li><a class="opcionMenu" href="contacto">Contacto</a></li>	
 					</ul>
 				</div>
 				<div class="col-xl-4 col-lg-4 col-md-4 text-center">
-					<a href="index.html"><img class="logoPrincipalFooter" src="imagenes/menu/logo-MekaDesing.png" alt=""></a>
+					<a href="inicio"><img class="logoPrincipalFooter" src="vistas/imagenes/menu/logo-MekaDesing.png" alt=""></a>
 				</div>
 				<div class="contenedorRedesSociales col-xl-4 col-lg-4 col-md-4 text-right">
 					<a class="redesSocialesFooter facebook" target="blank" href="https://www.facebook.com/MekaDesignMX"><i class="fab fa-facebook-f"></i></a>
@@ -537,14 +537,14 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 	<!-- PROYECTOS -->
-	<script src="js/proyectos/imagesloaded.pkgd.min.js"></script>
-	<script src="js/proyectos/masonry.pkgd.min.js"></script>
-	<script src="js/proyectos/charming.min.js"></script>
-	<script src="js/proyectos/TweenMax.min.js"></script>
-	<script src="js/proyectos/demo.js"></script>
+	<script src="vistas/js/proyectos/imagesloaded.pkgd.min.js"></script>
+	<script src="vistas/js/proyectos/masonry.pkgd.min.js"></script>
+	<script src="vistas/js/proyectos/charming.min.js"></script>
+	<script src="vistas/js/proyectos/TweenMax.min.js"></script>
+	<script src="vistas/js/proyectos/demo.js"></script>
 
 	<!-- Menu -->
-	<script src="js/index/menu.js"></script>
+	<script src="vistas/js/index/menu.js"></script>
 
 </body>
 </html>
