@@ -2,11 +2,18 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Contacto</title>
+	<title>MekaDesign - Contacto</title>
 
 	<!-- Behavioral Meta Data -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- MetaDatos -->
+	<meta name="author" content="Paúl Pichón - MekaDesign" />
+	<meta name="description" content="En MekaDesign afilamos el performance de tu negocio desarrollando soluciones digitales para ti, activando tu presencia en linea para conectar con clientes inmersos en esta “nueva” realidad."/>
+	<meta name="keywords" content="MekaDesign, desarrollo web, programacion, diseño Web, administracion redes sociales, Tlaxcala, sitios web, PWA, progressive web app, sistemas web, aplicaciones moviles, ecommerce, diseño grafico, diseño de logotipos, MekaDesign agencia, México, MekaDesign Tlaxcala, contenido creativo, social media"/>
+	<meta name="robots" content="index, follow"/>
+	<!-- CAMBIAR  LINK BASE -->
+	<!-- <base href="http://www.pruebas.mekadesign.mx"> -->
 	<!-- BOOTSTRAP 4-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- FontAwesone -->
@@ -100,7 +107,7 @@
 						</div>
 						<div class="col-xl-3 col-lg-3 text-center">
 							<a class="redesSociales facebook" target="blank" href="https://www.facebook.com/MekaDesignMX"><i class="fab fa-facebook-f"></i></a>
-							<a class="redesSociales LinkedIn" target="blank" href="#"><i class="fab fa-linkedin-in"></i></a>
+							<a class="redesSociales LinkedIn" target="blank" href="https://www.linkedin.com/company/mekadesign"><i class="fab fa-linkedin-in"></i></a>
 						</div>
 					</div>
 				</div>
@@ -144,18 +151,18 @@
 						<h4 class="tituloh4 text-right">MANDANOS UN MENSAJE</h4>
 						<hr class="lineaRojaMensajeContacto">
 					</div>
-					<form class="mt-5">
+					<form id="formularioContacto" class="mt-5">
 						<div class="form-group">
-						  <input type="email" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Nombre completo *">
+						  <input type="text" class="form-control" id="nombreUsuario" name="nombreUsuario" aria-describedby="emailHelp" placeholder="Nombre completo *">
 						</div>
 						<div class="form-group">
-						  <input type="text" class="form-control" id="correo" placeholder="Correo electrónico *">
+						  <input type="text" class="form-control" id="correoUsuario" name="correoUsuario" placeholder="Correo electrónico *">
 						</div>
 						<div class="form-group">
-						  <input type="text" class="form-control" id="telefono" placeholder="Teléfono ">
+						  <input type="text" class="form-control" id="telefonoUsuario" name="telefonoUsuario" placeholder="Teléfono ">
 						</div>
 						<div class="form-group">
-							<textarea class="form-control" id="mensaje" rows="5" placeholder="Cuéntanos un poco sobre tu idea"></textarea>
+							<textarea class="form-control" id="mensajeUsuario" name="mensajeUsuario"placeholder="Cuéntanos un poco sobre tu idea"></textarea>
 						   </div>
 						<p class="float-left textRequerido">* Requeridos</p>
 						<button type="submit" class="btn float-right btnEnviarMensaje">Enviar</button>
@@ -164,9 +171,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
 
 	<!-- FOOTER -->
 	<footer class="footer">
@@ -184,7 +188,7 @@
 				</div>
 				<div class="contenedorRedesSociales col-xl-4 col-lg-4 col-md-4 text-right">
 					<a class="redesSocialesFooter facebook" target="blank" href="https://www.facebook.com/MekaDesignMX"><i class="fab fa-facebook-f"></i></a>
-					<a class="redesSocialesFooter linkedin" target="blank" href="#"><i class="fab fa-linkedin-in"></i></a>
+					<a class="redesSocialesFooter linkedin" target="blank" href="https://www.linkedin.com/company/mekadesign"><i class="fab fa-linkedin-in"></i></a>
 				</div>
 			</div>
 
@@ -196,57 +200,22 @@
 				</div>
 				<div class="contenedorPoliticasTerminos col-xl-4 col-lg-4 col-md-4 text-right">
 					<a class="privacidadPoliticas mr-3" href="#">Políticas de privacidad</a>
-					<a class="privacidadPoliticas" href="">Términos y Condiciones</a>
+					<a class="privacidadPoliticas" href="#">Términos y Condiciones</a>
 				</div>
 			</div>
-
 		</div>
 	</footer>
-	
-	
 	
 	<!-- BOOTSTRAP V.4-->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-	<!-- Activacion menu hamburguesa Jquery-->
-	<script type="text/javascript">
-		$( document ).ready(function() {
-			$('#menu_on').click(function(){ // Al hacer click...
-			   $('body').toggleClass('visible_menu'); // Añadimos o eliminamos la clase 'visible_menu' al body
-			 })
-		});
-	</script>
-
-	<script>
-		// EFECTO APARECER/DESAPARECER MENU AL HACER SCROLL
-		//JAVASCRIPT
-		let new_scroll_position = 0;
-		let last_scroll_position;
-		const header = document.getElementById("header");
-
-		window.addEventListener('scroll', function(e) {
-		last_scroll_position = window.scrollY;
-
-		// Scrolling down
-		if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
-		// header.removeClass('slideDown').addClass('slideUp');
-		header.classList.remove("slideDown");
-		header.classList.add("slideUp");
-
-		// Scrolling up
-		} else if (new_scroll_position > last_scroll_position) {
-		// header.removeClass('slideUp').addClass('slideDown');
-		header.classList.remove("slideUp");
-		header.classList.add("slideDown");
-
-		}
-
-		new_scroll_position = last_scroll_position;
-
-		});
-	</script>
+	<!-- Menu -->
+	<script src="js/index/menu.js"></script>
+	<!-- jQueryValidate -->
+	<script src="js/jQueryValidate/jquery.validate.js"></script>
+	<!-- Script validar formulario Contacto -->
+	<script type="text/javascript" src="js/index/validarFormularioContacto.js"></script>
 
 </body>
 </html>

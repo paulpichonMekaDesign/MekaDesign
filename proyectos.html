@@ -2,11 +2,18 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Proyectos</title>
+	<title>MekaDesign - Proyectos</title>
 
 	<!-- Behavioral Meta Data -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- MetaDatos -->
+	<meta name="author" content="Paúl Pichón - MekaDesign" />
+	<meta name="description" content="En MekaDesign afilamos el performance de tu negocio desarrollando soluciones digitales para ti, activando tu presencia en linea para conectar con clientes inmersos en esta “nueva” realidad."/>
+	<meta name="keywords" content="MekaDesign, desarrollo web, programacion, diseño Web, administracion redes sociales, Tlaxcala, sitios web, PWA, progressive web app, sistemas web, aplicaciones moviles, ecommerce, diseño grafico, diseño de logotipos, MekaDesign agencia, México, MekaDesign Tlaxcala, contenido creativo, social media"/>
+	<meta name="robots" content="index, follow"/>
+	<!-- CAMBIAR  LINK BASE -->
+	<!-- <base href="http://www.pruebas.mekadesign.mx"> -->
 	<!-- BOOTSTRAP 4-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- FontAwesone -->
@@ -103,7 +110,7 @@
 						</div>
 						<div class="col-xl-3 col-lg-3 text-center">
 							<a class="redesSociales facebook" target="blank" href="https://www.facebook.com/MekaDesignMX"><i class="fab fa-facebook-f"></i></a>
-							<a class="redesSociales LinkedIn" target="blank" href="#"><i class="fab fa-linkedin-in"></i></a>
+							<a class="redesSociales LinkedIn" target="blank" href="https://www.linkedin.com/company/mekadesign"><i class="fab fa-linkedin-in"></i></a>
 						</div>
 					</div>
 				</div>
@@ -503,7 +510,7 @@
 				</div>
 				<div class="contenedorRedesSociales col-xl-4 col-lg-4 col-md-4 text-right">
 					<a class="redesSocialesFooter facebook" target="blank" href="https://www.facebook.com/MekaDesignMX"><i class="fab fa-facebook-f"></i></a>
-					<a class="redesSocialesFooter linkedin" target="blank" href="#"><i class="fab fa-linkedin-in"></i></a>
+					<a class="redesSocialesFooter linkedin" target="blank" href="https://www.linkedin.com/company/mekadesign"><i class="fab fa-linkedin-in"></i></a>
 				</div>
 			</div>
 
@@ -536,43 +543,8 @@
 	<script src="js/proyectos/TweenMax.min.js"></script>
 	<script src="js/proyectos/demo.js"></script>
 
-	<!-- Activacion menu hamburguesa Jquery-->
-	<script type="text/javascript">
-		$( document ).ready(function() {
-			$('#menu_on').click(function(){ // Al hacer click...
-			   $('body').toggleClass('visible_menu'); // Añadimos o eliminamos la clase 'visible_menu' al body
-			 })
-		});
-	</script>
-
-	<script>
-		// EFECTO APARECER/DESAPARECER MENU AL HACER SCROLL
-		//JAVASCRIPT
-		let new_scroll_position = 0;
-		let last_scroll_position;
-		const header = document.getElementById("header");
-
-		window.addEventListener('scroll', function(e) {
-		last_scroll_position = window.scrollY;
-
-		// Scrolling down
-		if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
-		// header.removeClass('slideDown').addClass('slideUp');
-		header.classList.remove("slideDown");
-		header.classList.add("slideUp");
-
-		// Scrolling up
-		} else if (new_scroll_position > last_scroll_position) {
-		// header.removeClass('slideUp').addClass('slideDown');
-		header.classList.remove("slideUp");
-		header.classList.add("slideDown");
-
-		}
-
-		new_scroll_position = last_scroll_position;
-
-		});
-	</script>
+	<!-- Menu -->
+	<script src="js/index/menu.js"></script>
 
 </body>
 </html>

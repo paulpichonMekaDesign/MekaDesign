@@ -462,6 +462,9 @@ footer.footer{
     hr.lineaRojaMensajeContacto{
       width: 100%;
     }
+    p.textoContacto{
+      text-align: center;
+    }
  }
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 

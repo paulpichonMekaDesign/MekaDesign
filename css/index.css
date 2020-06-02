@@ -808,7 +808,7 @@ img.imgFooterMenu{
 /* Fin menu en general */
 
 /* frase despues del menu */
-p.frase{
+h1.frase{
   font-size: 2.5rem;
   font-family: 'Open Sans', sans-serif;
   margin: 50px 70px;
@@ -1708,7 +1708,7 @@ a.privacidadPoliticas{
     left: -14%;
   }
   /* frase despues del menu */
-  p.frase{
+  h1.frase{
     font-size: 1.7rem;
   }
   /* IMAGEN MARCAS */
@@ -1999,7 +1999,7 @@ a.privacidadPoliticas{
     top: 30%;
   }
   /* frase despues del menu */
-  p.frase{
+  h1.frase{
     font-size: 1.2rem;
     margin: 0 0 30px 0;
   }
