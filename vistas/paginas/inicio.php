@@ -276,49 +276,49 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-MCITechnology.png" alt="MekaDesign Logo MCITechnology" title="MekaDesign Logo MCI Technology">
+					<img loading='lazy' class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-MCITechnology.png" alt="MekaDesign Logo MCITechnology" title="MekaDesign Logo MCI Technology">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-Impulsoconsultoria.png" alt="Meka Design - Logo - Impulso consultoria" title="Meka Design - Logo - Impulso consultoria">
+					<img loading='lazy' class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-Impulsoconsultoria.png" alt="Meka Design - Logo - Impulso consultoria" title="Meka Design - Logo - Impulso consultoria">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-CANACOTlaxcala.png" alt="MekaDesign Logo CANACO Tlaxcala" title="MekaDesign Logo CANACO Tlaxcala">
+					<img loading='lazy' class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-CANACOTlaxcala.png" alt="MekaDesign Logo CANACO Tlaxcala" title="MekaDesign Logo CANACO Tlaxcala">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-FemmeDor.png" alt="MekaDesign Logo FemmeDor" title="MekaDesign Logo Femme Dor">
+					<img loading='lazy' class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-FemmeDor.png" alt="MekaDesign Logo FemmeDor" title="MekaDesign Logo Femme Dor">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-GuiaComercialApizaco.png" alt="MekaDesign Logo Guia Comercial Apizaco" title="MekaDesign Logo Guia Comercial Apizaco">
+					<img loading='lazy' class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-GuiaComercialApizaco.png" alt="MekaDesign Logo Guia Comercial Apizaco" title="MekaDesign Logo Guia Comercial Apizaco">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-GulaGourmet.png" alt="MekaDesign Logo GulaGourmet" title="MekaDesign Logo Gula Gourmet">
+					<img loading='lazy' class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-GulaGourmet.png" alt="MekaDesign Logo GulaGourmet" title="MekaDesign Logo Gula Gourmet">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-HacedoresMexico.png" alt="MekaDesign Logo Hacedores Mexico" title="MekaDesign Logo Hacedores Mexico">
+					<img loading='lazy' class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-HacedoresMexico.png" alt="MekaDesign Logo Hacedores Mexico" title="MekaDesign Logo Hacedores Mexico">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-ProPeninsular.png" alt="Meka Design Logo ProPeninsular" title="Meka Design Logo ProPeninsular">
+					<img loading='lazy' class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-ProPeninsular.png" alt="Meka Design Logo ProPeninsular" title="Meka Design Logo ProPeninsular">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-Inamiki.png" alt="Meka Design Logo Inamiki" title="Meka Design Logo Inamiki">
+					<img loading='lazy' class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-Inamiki.png" alt="Meka Design Logo Inamiki" title="Meka Design Logo Inamiki">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-LaDoña.png" alt="MekaDesign Logo LaDoña" title="MekaDesign Logo La Doña">
+					<img loading='lazy' class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-LaDoña.png" alt="MekaDesign Logo LaDoña" title="MekaDesign Logo La Doña">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-MaxShop.png" alt="MekaDesign Logo MaxShop" title="MekaDesign Logo Max Shop">
+					<img loading='lazy' class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-MaxShop.png" alt="MekaDesign Logo MaxShop" title="MekaDesign Logo Max Shop">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-RafaelGalva.png" alt="MekaDesign Logo RafaelGalva" title="MekaDesign Logo Rafael Galva">
+					<img loading='lazy' class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-RafaelGalva.png" alt="MekaDesign Logo RafaelGalva" title="MekaDesign Logo Rafael Galva">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-RealEventosyTurismo.png" alt="MekaDesign Logo Real Eventos y Turismo" title="MekaDesign Logo Real Eventos y Turismo">
+					<img loading='lazy' class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-RealEventosyTurismo.png" alt="MekaDesign Logo Real Eventos y Turismo" title="MekaDesign Logo Real Eventos y Turismo">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-ElMuraldelPo.png" title="Meka Design El Mural de los Poblanos">
+					<img loading='lazy' class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-ElMuraldelPo.png" title="Meka Design El Mural de los Poblanos">
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-5 text-center">
-					<img class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-XRSoluciones.png" alt="MekaDesign Logo XRSoluciones" title="MekaDesign Logo XR Soluciones">
+					<img loading='lazy' class="imgSeccionMarcas" src="vistas/imagenes/index/marcas/MekaDesign-Logo-XRSoluciones.png" alt="MekaDesign Logo XRSoluciones" title="MekaDesign Logo XR Soluciones">
 				</div>
 			</div>
 		</div>

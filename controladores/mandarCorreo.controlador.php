@@ -105,7 +105,7 @@ class Email{
                            <body>
                              
                               <div class="divNegro">
-                                   <img class="logoHeader" width="150px" src="https://mekadesign.mx/imagenes/1.png" alt="MekaDesign Logo">
+                                   <img class="logoHeader" width="150px" src="http://pruebas.mekadesign.mx/vistas/imagenes/menu/logo-MekaDesing.png" alt="MekaDesign Logo">
                               </div>
                               <div class="container">
                                    <h1 class="titulo">Mensaje desde la web</h1>
@@ -131,7 +131,7 @@ class Email{
                                   </div>
                               </div>
                               <div class="divNegroFooter">
-                                   <img class="logoHeaderFooter" width="150px" src="https://mekadesign.mx/imagenes/1.png" alt="MekaDesign Logo">
+                                   <img class="logoHeaderFooter" width="150px" src="http://pruebas.mekadesign.mx/vistas/imagenes/menu/logo-MekaDesing.png" alt="MekaDesign Logo">
                               </div>
                            </body>
                          </html>';
