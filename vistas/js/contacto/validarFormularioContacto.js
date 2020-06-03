@@ -1,23 +1,40 @@
 // Formulario de Contacto
 $( document ).ready( function () {
-     $.validator.addMethod(
-          "regex",
-               function(value, element, regexp) {
+
+     //nombre usuario y mensaje del usuario
+     $.validator.addMethod(  "regex", function(value, element, regexp) {
                var re = new RegExp(regexp);
                return this.optional(element) || re.test(value);
                },
                "Please check your input."
      );
+     
+     //teléfono
+     $.validator.addMethod('telefonoRegex', function (value, element) {
+          return this.optional(element) || /^(\([0-9]\d{2}\)|[0-9]\d{2})-?[0-9]\d{2}-?\d{4}$/.test(value);
+      }, "Por favor entre un número de teléfono válido");
 
-     $( "#formularioContacto" ).validate( {
+      //CORREO ELECTRONICO
+      $.validator.addMethod(  "emailRegex", function(value, element, regexp) {
+          var re = new RegExp(regexp);
+          return this.optional(element) || re.test(value);
+          },
+          "Por favor entre un email válido"
+     );
+
+     $( "#formularioContacto").validate( {
           rules: {
                nombreUsuario: {
-                    regex: /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/,
+                    regex: /^([a-zA-ZáéíóúÁÉÍÓÚñÑ][a-zA-ZáéíóúÁÉÍÓÚñÑ]+[\s]*)+$/,
                     required: true
                },
                correoUsuario: {
                     required: true,
-                    email: true
+                    emailRegex: /^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/
+               },
+               telefonoUsuario: 'telefonoRegex',
+               mensajeUsuario: {
+                    regex: /^([a-zA-ZáéíóúÁÉÍÓÚñÑ0-9][\s]*)+$/
                }
           },
           messages: {
@@ -25,7 +42,9 @@ $( document ).ready( function () {
                     required: "Ingrese su nombre",
                     regex: "No se permiten caracteres especiales ni numeros"
                },
-               correoUsuario: "Ingrese un correo valido"
+               correoUsuario: "Ingrese un correo valido",
+               telefonoUsuario: "Ingrese un teléfono válido",
+               mensajeUsuario: "No se permiten caracteres especiales"
           },
           errorElement: "em",
           errorPlacement: function ( error, element ) {
