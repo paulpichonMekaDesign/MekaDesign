@@ -26,6 +26,17 @@
 	<!-- sweetalert 2-->
 	<link rel="stylesheet" type="text/css" href="vistas/plugins/sweetalert2/sweetalert2.css"/>
 	<script src="vistas/plugins/sweetalert2/sweetalert2.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168678866-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-168678866-1');
+	</script>
+
 <body>
 
 	<!-- menú -->

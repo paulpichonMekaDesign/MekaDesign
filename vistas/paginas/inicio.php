@@ -23,6 +23,16 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
 	<!-- ESTILOS PROPIOS -->
 	<link rel="stylesheet" type="text/css" href="vistas/css/index.css"/>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168678866-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-168678866-1');
+	</script>
+
 
 </head>
 <body>
@@ -185,7 +195,7 @@
 					<div class="col-xl-6 col-md-6">
 						<a href="proyectos">
 							<div class="grid__item">
-								<div class="glitch glitch--style-6">
+								<div class="glitch glitch--style-7">
 									<div class="glitch__img"></div>
 									<div class="glitch__img"></div>
 									<div class="glitch__img"></div>
@@ -199,7 +209,7 @@
 					<div class="col-xl-6 col-md-6">
 						<a href="proyectos">
 							<div class="grid__item">
-								<div class="glitch glitch--style-6">
+								<div class="glitch glitch--style-8">
 									<div class="glitch__img"></div>
 									<div class="glitch__img"></div>
 									<div class="glitch__img"></div>
@@ -213,7 +223,7 @@
 					<div class="col-xl-6 col-md-6">
 						<a href="proyectos">
 							<div class="grid__item">
-								<div class="glitch glitch--style-6">
+								<div class="glitch glitch--style-9">
 									<div class="glitch__img"></div>
 									<div class="glitch__img"></div>
 									<div class="glitch__img"></div>
@@ -227,7 +237,7 @@
 					<div class="col-xl-6 col-md-6">
 						<a href="proyectos">
 							<div class="grid__item">
-								<div class="glitch glitch--style-6">
+								<div class="glitch glitch--style-10">
 									<div class="glitch__img"></div>
 									<div class="glitch__img"></div>
 									<div class="glitch__img"></div>
@@ -241,7 +251,7 @@
 					<div class="col-xl-6 col-md-6">
 						<a href="proyectos">
 							<div class="grid__item">
-								<div class="glitch glitch--style-6">
+								<div class="glitch glitch--style-11">
 									<div class="glitch__img"></div>
 									<div class="glitch__img"></div>
 									<div class="glitch__img"></div>
@@ -255,7 +265,7 @@
 					<div class="col-xl-6 col-md-6">
 						<a href="proyectos">
 							<div class="grid__item">
-								<div class="glitch glitch--style-6">
+								<div class="glitch glitch--style-12">
 									<div class="glitch__img"></div>
 									<div class="glitch__img"></div>
 									<div class="glitch__img"></div>

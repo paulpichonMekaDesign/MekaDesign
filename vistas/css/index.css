@@ -847,7 +847,7 @@ h1.tituloServicios{
 	--color-subtitle: #30efbf;
 }
 
-.glitch--style-1 {
+.glitch--style-1, .glitch--style-7 {
 	--gap-horizontal: 20px;
 	--gap-vertical: 2px;
 	--time-anim: 2.25s;
@@ -863,7 +863,7 @@ h1.tituloServicios{
 	--blend-color-5: transparent;
 }
 
-.glitch--style-2 {
+.glitch--style-2, .glitch--style-8 {
 	--gap-horizontal: 5px;
 	--gap-vertical: 10px;
 	--time-anim: 2s;
@@ -879,7 +879,7 @@ h1.tituloServicios{
 	--blend-color-5: #c9b09a;
 }
 
-.glitch--style-3 {
+.glitch--style-3, .glitch--style-9 {
 	--gap-horizontal: 20px;
 	--gap-vertical: 2px;
 	--time-anim: 2.25s;
@@ -895,7 +895,7 @@ h1.tituloServicios{
 	--blend-color-5: transparent;
 }
 
-.glitch--style-4 {
+.glitch--style-4, .glitch--style-10 {
 	--gap-horizontal: 5px;
 	--gap-vertical: 20px;
 	--time-anim: 5s;
@@ -911,7 +911,7 @@ h1.tituloServicios{
 	--blend-color-5: transparent;
 }
 
-.glitch--style-5 {
+.glitch--style-5, .glitch--style-11 {
 	--gap-horizontal: 50px;
 	--gap-vertical: 100px;
 	--time-anim: 2.25s;
@@ -927,7 +927,7 @@ h1.tituloServicios{
 	--blend-color-5: #8d16f2;
 }
 
-.glitch--style-6 {
+.glitch--style-6, .glitch--style-12 {
 	--gap-horizontal: 3px;
 	--gap-vertical: 70px;
 	--time-anim: 2.25s;
@@ -1001,30 +1001,49 @@ div.grid__item{
 	left: calc(-1 * var(--gap-horizontal));
 	width: calc(100% + var(--gap-horizontal) * 2);
 	height: calc(100% + var(--gap-vertical) * 2);
-  background: url(../imagenes/index/imagenesServicios/1.jpg) no-repeat 50% 0;
+  background: url(../imagenes/index/imagenesServicios/sitios-web.jpg) no-repeat 50% 0;
 	background-color: var(--blend-color-1);
 	background-size: cover;
 	transform: translate3d(0,0,0);
   background-blend-mode: var(--blend-mode-1);
 }
 .glitch--style-2 .glitch__img {
-	background-image: url(../imagenes/index/imagenesServicios/2.jpg);
+  background-image: url(../imagenes/index/imagenesServicios/sistemas-web.jpg);
 }
 
 .glitch--style-3 .glitch__img {
-	background-image: url(../imagenes/index/imagenesServicios/3.jpg);
+  background-image: url(../imagenes/index/imagenesServicios/aplicaciones-moviles.jpg);
 }
 
 .glitch--style-4 .glitch__img {
-	background-image: url(../imagenes/index/imagenesServicios/4.jpg);
+  background-image: url(../imagenes/index/imagenesServicios/pwa.png);
 }
 
 .glitch--style-5 .glitch__img {
-	background-image: url(../imagenes/index/imagenesServicios/5.jpg);
+  background-image: url(../imagenes/index/imagenesServicios/ecommerce.jpg);
 }
 
 .glitch--style-6 .glitch__img {
-	background-image: url(../imagenes/index/imagenesServicios/6.jpg);
+  background-image: url(../imagenes/index/imagenesServicios/diseño-web.jpg);
+}
+.glitch--style-7 .glitch__img {
+  background-image: url(../imagenes/index/imagenesServicios/diseño-grafico.jpg);
+}
+.glitch--style-8 .glitch__img {
+  background-image: url(../imagenes/index/imagenesServicios/redes-sociales.jpg);
+}
+.glitch--style-9 .glitch__img {
+  background-image: url(../imagenes/index/imagenesServicios/logotipos.jpg);
+}
+.glitch--style-10 .glitch__img {
+  background-image: url(../imagenes/index/imagenesServicios/presentaciones-dinamicas.jpg);
+}
+.glitch--style-11 .glitch__img {
+  background-image: url(../imagenes/index/imagenesServicios/tarjetas.jpg);
+}
+
+.glitch--style-12 .glitch__img {
+  background-image: url(../imagenes/index/imagenesServicios/presentacion-pp.jpg);
 }
 
 /* Set the background colors for the glitch images*/
@@ -1057,7 +1076,7 @@ div.grid__item{
 
 /* On hover we show the 2nd, 3rd, 4th and 5th image*/
 .glitch:hover .glitch__img:nth-child(n+2) {
-	opacity: 1;
+  opacity: 1;
 }
 
 /* Hover animations for horizontal case */
@@ -1074,6 +1093,11 @@ div.grid__item{
 .glitch:hover > .glitch__img:nth-child(4) {
 	transform: translate3d(0, calc(-1 * var(--gap-vertical)), 0) scale3d(-1,-1,1);
 	animation: glitch-anim-3-horizontal var(--time-anim) infinite linear alternate;
+}
+/* efecto agregado al original*/
+.glitch:hover > .glitch__img:nth-child(odd) {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
 
 /* Hover animations for vertical case */
@@ -1512,7 +1536,7 @@ section.marcas{
 }
 img.imgSeccionMarcas{
   width: 50%;
-  height: 222px;
+  height: 222px!important;
 }
 
 /* FIN SECTION marcas */

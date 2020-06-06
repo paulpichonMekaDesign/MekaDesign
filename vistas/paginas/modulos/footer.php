@@ -10,7 +10,7 @@
                     </ul>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-4 text-center">
-                    <a href="http://localhost/MekaDesign/"><img class="logoPrincipalFooter" src="vistas/imagenes/menu/logo-MekaDesing.png" alt=""></a>
+                    <a href="https://mekadesign.mx/"><img class="logoPrincipalFooter" src="vistas/imagenes/menu/logo-MekaDesing.png" alt=""></a>
                </div>
                <div class="contenedorRedesSociales col-xl-4 col-lg-4 col-md-4 text-right">
                     <a class="redesSocialesFooter facebook" target="blank" href="https://www.facebook.com/MekaDesignMX"><i class="fab fa-facebook-f"></i></a>
